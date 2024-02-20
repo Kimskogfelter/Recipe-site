@@ -108,3 +108,7 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+
+
+* logo from https://app.logo.com/dashboard/your-logo-files

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    /* fonts */
+    --title: 'Roboto', 'Sans-serif';
+    --main-font: 'Roboto', 'Sans-serif';
+
+    /* colors */
+
+    --background: #fff;
+    --green: #209d24;
+    --white: #fff;
+
+    /* box shadows and border */
+    --small-box-shadow: 1px -1px 7px 0 #00000061;
+    --border: 1px solid #0c430e;
+
+}
+
+html, body {
+    height: 100%;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title);
+}
+
+main {
+    flex: 10 auto;
+    background-color: var(--white);
+}
+/* header */
+
+.navbar {
+    background-color: var(--white);
+    box-shadow: var(--small-box-shadow);
+}
+
+a.nav-link {
+    color: var(--green);
+}
+
+img.healthy-you-logo {
+
+}
+
+/* footer */
+footer {
+    flex-shrink: 0;
+}
