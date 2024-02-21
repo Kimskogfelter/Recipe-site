@@ -9,12 +9,13 @@
     /* colors */
 
     --background: #fff;
-    --green: #209d24;
+    --green: #49892a;
     --white: #fff;
+    --off-white: #F1EDE1;
 
     /* box shadows and border */
     --small-box-shadow: 1px -1px 7px 0 #00000061;
-    --border: 1px solid #0c430e;
+    --border: 1px solid #9fa5a0;
 
 }
 
@@ -38,9 +39,12 @@ main {
     background-color: var(--white);
 }
 /* header */
+header {
+    background-color: var(--off-white);
+}
 
 .navbar {
-    background-color: var(--white);
+    background-color: var(--off-white);
     box-shadow: var(--small-box-shadow);
 }
 
@@ -49,10 +53,25 @@ a.nav-link {
 }
 
 img.healthy-you-logo {
+    height: 100px;
+    width: 340px;
+    margin-left: 20px;
+    margin-right: 10px;
 
 }
 
 /* footer */
 footer {
     flex-shrink: 0;
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: var(--border);
+}
+
+.social-media-icons {
+    height: 2rem;
+    margin: 1rem;
 }

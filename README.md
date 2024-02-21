@@ -112,3 +112,4 @@ Happy coding!
 
 
 * logo from https://app.logo.com/dashboard/your-logo-files
+* icons from https://uxwing.com/tag/social-media-icons/page/3/
