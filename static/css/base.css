@@ -38,7 +38,7 @@ main {
     flex: 10 auto;
     background-color: var(--white);
 }
-/* header */
+/* HEADER */
 header {
     background-color: var(--off-white);
 }
@@ -52,6 +52,31 @@ a.nav-link {
     color: var(--green);
 }
 
+/* active link in navbar */
+.navbar-nav .nav-link :active {
+  
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link :hover {
+    text-decoration: underline;
+}
+
+
+/* search bar */
+.form-inline {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-window {
+    margin-right: 10px;
+}
+
+.search-button {
+    margin-right: 10px;
+}
+
 img.healthy-you-logo {
     height: 100px;
     width: 340px;
@@ -60,7 +85,7 @@ img.healthy-you-logo {
 
 }
 
-/* footer */
+/* FOOTER */
 footer {
     flex-shrink: 0;
     background-color: var(--off-white);
