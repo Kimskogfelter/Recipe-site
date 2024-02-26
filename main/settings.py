@@ -26,7 +26,7 @@ if os.path.exists('env.py'):
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["8000-kimskogfelte-recipesite-kj2l9ydts1i.ws-eu108.gitpod.io"]
 
@@ -156,3 +156,5 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-kimskogfelte-recipesite-kj2l9ydts1i.ws-eu108.gitpod.io']
