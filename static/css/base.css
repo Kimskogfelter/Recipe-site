@@ -10,8 +10,10 @@
 
     --background: #fff;
     --green: #49892a;
+    --darkgreen: #198754;
     --white: #fff;
     --off-white: #F1EDE1;
+
 
     /* box shadows and border */
     --small-box-shadow: 1px -1px 7px 0 #00000061;
@@ -38,6 +40,11 @@ main {
     flex: 10 auto;
     background-color: var(--white);
 }
+
+.darkgreen-text {
+    color: var(--darkgreen);
+}
+
 /* HEADER */
 header {
     background-color: var(--off-white);
@@ -53,14 +60,12 @@ a.nav-link {
 }
 
 /* active link in navbar */
-.navbar-nav .nav-link :active {
-  
-    text-decoration: underline;
+
+.active {
+    border-bottom: 2px solid var(--darkgreen);
+    font-weight: 300;
 }
 
-.navbar-nav .nav-link :hover {
-    text-decoration: underline;
-}
 
 
 /* search bar */
@@ -99,4 +104,30 @@ footer {
 .social-media-icons {
     height: 2rem;
     margin: 1rem;
+}
+
+/* SIGNUP PAGE */
+.heading-text {
+    margin-top: 10px;
+}
+
+/* LOGIN PAGE */
+
+.heading-text {
+    margin-top: 10px;
+}
+
+/* LOGOUT PAGE */
+
+.heading-text {
+    margin-top: 10px;
+}
+
+/* forms */
+
+.form {
+    width: 100%;
+    margin: 3% auto;
+    box-shadow: var(--small-box-shadow);
+    border-radius: 5px;
 }
