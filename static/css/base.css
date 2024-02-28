@@ -150,3 +150,10 @@ footer {
     box-shadow: var(--small-box-shadow);
     border-radius: 5px;
 }
+
+/* RECIPES.HTML PAGE */
+
+/* latest recipes heading background */
+.healthy-food-background {
+    background-image: url("static/images/healthy-food.jpeg");
+}
