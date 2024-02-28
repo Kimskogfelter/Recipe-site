@@ -41,8 +41,44 @@ main {
     background-color: var(--white);
 }
 
+/* dark green text */
 .darkgreen-text {
     color: var(--darkgreen);
+}
+
+/* green text */
+.green-text {
+    color: var(--green);
+}
+
+/* heading text */
+
+.heading-text {
+    margin-top: 10px;
+    color: var(--off-white);
+    background-color: #49892a;
+    border-radius: 20px;
+    
+}
+
+/* main text */
+
+.main-text {
+    color: black;
+
+}
+
+/* anchors */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* buttons */
+.green-button {
+    background-color: var(--darkgreen);
+    margin-bottom: 10px;
+    border-color: var(--darkgreen);
 }
 
 /* HEADER */
@@ -104,23 +140,6 @@ footer {
 .social-media-icons {
     height: 2rem;
     margin: 1rem;
-}
-
-/* SIGNUP PAGE */
-.heading-text {
-    margin-top: 10px;
-}
-
-/* LOGIN PAGE */
-
-.heading-text {
-    margin-top: 10px;
-}
-
-/* LOGOUT PAGE */
-
-.heading-text {
-    margin-top: 10px;
 }
 
 /* forms */

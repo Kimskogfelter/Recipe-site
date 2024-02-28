@@ -3,7 +3,7 @@
 {% block title %}Recipes{% endblock %}
 
 {% block content %} 
-<h1 class="text-center p-2 d-block">
+<h1 class="text-center p-2 d-block heading-text">
     Latest Recipes
 </h1>
 <div class="container d-flex flex-row flex-wrap justify-content-center">
@@ -12,8 +12,8 @@
         <div class="card m-3" style="width: 18rem;">
             <img src="{{recipe.image.url}}" class="card-img-top" alt="{{recipe.image_alt}}">
             <div class="card-body">
-              <h2 class="card-title">{{recipe.title}}</h2>
-              <p class="card-text">{{recipe.description|truncatechars:100}}</p>
+              <h2 class="card-title main-text  ">{{recipe.title}}</h2>
+              <p class="card-text main-text  ">{{recipe.description|truncatechars:100}}</p>
             </div>
         </div>
     </a>
