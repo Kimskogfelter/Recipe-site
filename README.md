@@ -117,3 +117,10 @@ Happy coding!
 * images: 
    chicken sallad: https://www.freepik.com/free-photo/chicken-parmesan-caesar-salad-with-lettuce-cherry-tomatoes-inside-white-bowl-served-with-sauce-bread_5021765.htm#fromView=search&page=1&position=6&uuid=3b5f8b3c-e970-41a7-9c08-3c56c5e6f051
    background for recipes.html heading: https://www.pexels.com/sv-se/foto/mat-tallrik-halsosam-gronsaker-1640777/
+   steak with veggies: https://www.pexels.com/sv-se/foto/mat-tallrik-sallad-halsosam-361184/
+   egg and avocado sandwich: https://www.pexels.com/sv-se/foto/brod-mat-smorgas-rostat-brod-824635/
+   fruit bowl: https://www.pexels.com/sv-se/foto/mat-halsosam-frukt-fargrik-1105166/
+   smoothie: https://www.pexels.com/sv-se/foto/mat-kall-halsosam-kvinna-3679973/
+   fish and veggies: https://www.pexels.com/sv-se/foto/matratt-aptitretare-kok-matfotografi-1516415/
+   pasta with veggies: https://www.pexels.com/sv-se/foto/mat-tallrik-halsosam-lunch-1279330/
+   fruit bowl: https://www.pexels.com/sv-se/foto/mat-kall-natur-dryck-4553031/

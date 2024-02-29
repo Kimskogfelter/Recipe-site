@@ -24,6 +24,7 @@ FOOD_TYPE = (
     ('Sallad', 'Sallad'),
     ('pasta', 'Pasta'),
     ('rice', 'Rice'),
+    ('fruit', 'Fruit')
 
 )
 
