@@ -116,3 +116,4 @@ Happy coding!
 * youtube tutorial https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1
 * images: 
    chicken sallad: https://www.freepik.com/free-photo/chicken-parmesan-caesar-salad-with-lettuce-cherry-tomatoes-inside-white-bowl-served-with-sauce-bread_5021765.htm#fromView=search&page=1&position=6&uuid=3b5f8b3c-e970-41a7-9c08-3c56c5e6f051
+   background for recipes.html heading: https://www.pexels.com/sv-se/foto/mat-tallrik-halsosam-gronsaker-1640777/
