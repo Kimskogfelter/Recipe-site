@@ -213,6 +213,13 @@ img.healthy-you-logo {
     align-items: center; 
   }
 
+  /* RECIPE_DETAIL.HTML PAGE */
+
+  /* make recipe image smaller */
+  .recipe-pic {
+    width: 350px;
+  }
+
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
 
@@ -233,6 +240,17 @@ img.healthy-you-logo {
   }
 }
 
+
+/* Media query: screens bigger then 768px */
+@media screen and (min-width: 768px) {
+    
+  /* RECIPE_DETAIL.HTML PAGE */
+
+  /* make recipe image bigger */
+  .recipe-pic {
+    width: 570px;
+  }
+}
 
 /* Media query: Screens bigger then 1200px */
 @media screen and (min-width: 1200px) { 
