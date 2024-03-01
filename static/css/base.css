@@ -180,3 +180,52 @@ footer {
     flex-direction: column; /* Adjust the flex direction if needed */
     align-items: center; /* Center the items horizontally */
 }
+
+/* MEDIA QUERIES */
+
+/* Media query: landscape phones (576px maximum) */
+@media screen and (max-width: 576px) {
+
+
+/* HEADER.HTML */
+
+/* logo */
+img.healthy-you-logo {
+    height: 60px;
+    width: 200px;
+}
+
+/* toggle icon */
+.navbar-toggler {
+    margin-right: 10px;
+  }
+  }
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+
+ 
+ /* HEADER.HTML */
+
+  /* toggle icon */
+.navbar-toggler {
+    margin-right: 10px;
+    height: 3em;
+    width: 4em;
+  }
+
+  /* toggle icon image */
+  .navbar-toggler-icon {
+    background-size: 150%;
+
+  }
+}
+
+
+/* Media query: Screens bigger then 1200px */
+@media screen and (min-width: 1200px) { 
+
+
+/* RECIPES.HTML PAGE */
+
+}
