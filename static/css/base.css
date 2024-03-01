@@ -170,10 +170,11 @@ footer {
 
 /* RECIPE_DETAIL.HTML PAGE */
 
+/* centers the recipe recipe heading, description, calories and food type text */
 .recipe-info {
     display: flex;
-    flex-direction: column; /* Adjust the flex direction if needed */
-    align-items: center; /* Center the items horizontally */
+    flex-direction: column; 
+    align-items: center;
 }
 
 .recipe-pic {
@@ -181,11 +182,6 @@ footer {
     margin-bottom: 10px;
 }
 
-.recipe-container {
-    display: flex;
-    flex-direction: column; /* Adjust the flex direction if needed */
-    align-items: center; /* Center the items horizontally */
-}
 
 /* MEDIA QUERIES */
 
