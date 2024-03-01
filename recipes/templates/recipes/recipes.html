@@ -6,17 +6,21 @@
 <h1 class="text-center p-2 d-block heading-text healthy-food-background">
     Latest Recipes
 </h1>
-<div class="container d-flex flex-row flex-wrap justify-content-center">
-    {% for recipe in recipes %} 
-    <a href="{% url 'recipe_detail' recipe.id %}" class="recipes" aria-label="Click to view {{recipe.title}}">
-        <div class="card m-3" style="width: 18rem;">
-            <img src="{{recipe.image.url}}" class="card-img-top" alt="{{recipe.image_description}}">
-            <div class="card-body">
-              <h2 class="card-title main-text  ">{{recipe.title}}</h2>
-              <p class="card-text main-text  ">{{recipe.description|truncatechars:100}}</p>
-            </div>
+<div class="container">
+    <div class="row justify-content-center">
+        {% for recipe in recipes %} 
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="{% url 'recipe_detail' recipe.id %}" class="recipes" aria-label="Click to view {{recipe.title}}">
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="{{recipe.image.url}}" class="card-img-top" alt="{{recipe.image_description}}">
+                    <div class="card-body">
+                        <h2 class="card-title main-text">{{recipe.title}}</h2>
+                        <p class="card-text main-text">{{recipe.description|truncatechars:100}}</p>
+                    </div>
+                </div>
+            </a>
         </div>
-    </a>
-    {% endfor %}
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}
