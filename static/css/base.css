@@ -54,10 +54,13 @@ main {
 /* heading text */
 
 .heading-text {
-    margin-top: 10px;
-    color: var(--off-white);
+  
+    color: white;
     background-color: #49892a;
-    border-radius: 20px;
+    text-shadow: 0 2px 4px #000000d9;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
     
 }
 
@@ -257,5 +260,9 @@ img.healthy-you-logo {
 
 
 /* RECIPES.HTML PAGE */
+
+.recipe-card-bigger-screens {
+    width: 400px;
+}
 
 }
