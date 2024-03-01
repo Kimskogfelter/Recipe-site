@@ -162,6 +162,12 @@ footer {
     height: 90px;
 }
 
+.recipe-image {
+    height: 200px; /* Adjust the height as needed */
+    width: 100%; /* Adjust the width as needed */
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
 /* RECIPE_DETAIL.HTML PAGE */
 
 .recipe-info {
@@ -199,6 +205,16 @@ img.healthy-you-logo {
 .navbar-toggler {
     margin-right: 10px;
   }
+  }
+
+  /* RECIPES.HTML PAGE */
+
+  /* center recipe div */
+
+  .center-div {
+  display: flex;
+    flex-direction: column; 
+    align-items: center; 
   }
 
 /* Media query: large or landscape phones (576px and up) */
