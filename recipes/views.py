@@ -4,6 +4,7 @@ from django.views.generic import (
     UpdateView
 )
 
+""" checks if the user in logged in """
 from django.contrib.auth.mixins import (
     UserPassesTestMixin, LoginRequiredMixin
 )
