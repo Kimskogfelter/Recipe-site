@@ -54,7 +54,8 @@ class Recipe(models.Model):
     meal_type = models.CharField(max_length=45, choices=MEAL_TYPE, default="lunch")
     food_type = models.CharField(max_length=45, choices=FOOD_TYPE, default="sandwich")
     calories = models.IntegerField()
-    posted_date = models.DateTimeField(auto_now=True)
+    posted_date = models.DateTimeField(auto_now=True) # posted date for the recipe
+    recipe_rating = models.IntegerField(default=0)  # recipe star rating
 
     class Meta:
         ordering = ["-posted_date"]

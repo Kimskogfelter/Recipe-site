@@ -15,6 +15,13 @@
                 <p>{{recipe.description}}</p>
                 <p class=""><strong>Calories: </strong> {{ recipe.calories }}</p>
                 <p class=""><strong>Food Type: </strong> {{ recipe.food_type|title }}</p>
+                <div class="rating">
+                    <form method="post" action="{% url 'recipe_rating' recipe.id %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="rating" value="5"> 
+                        <button type="submit">Rate Recipe</button>
+                    </form>
+                </div>
 
                 
             </div>

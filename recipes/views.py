@@ -16,6 +16,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Recipe
 from .forms import RecipeForm
 
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 
 class Recipes(ListView):
     """View all recipes"""
@@ -37,6 +39,16 @@ class Recipes(ListView):
             recipes = self.model.objects.all()
         return recipes
 
+    
+def RecipeRating(request, recipe_id):
+    """ Adds a recipe rating to the recipes """
+    if request.method == 'POST':
+        rating = int(request.POST.get('rating', 0))
+        recipe = Recipe.objects.get(pk=recipe_id)
+        recipe.rating = rating
+        recipe.save()
+    return HttpResponseRedirect(reverse('recipe_detail', args=[recipe_id]))
+
 
 class RecipeDetail(DetailView):
     """View a single recipe"""
@@ -44,6 +56,7 @@ class RecipeDetail(DetailView):
     template_name = "recipes/recipe_detail.html"
     model = Recipe
     context_object_name = "recipe"
+
 
 
 class AddRecipe(LoginRequiredMixin, CreateView):
@@ -79,3 +92,5 @@ class DeleteRecipe(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         return self.request.user == self.get_object().user
+
+
