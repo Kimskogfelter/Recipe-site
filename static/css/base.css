@@ -79,10 +79,9 @@ a {
 }
 
 /* buttons */
-.green-button {
-    background-color: var(--darkgreen);
-    margin-bottom: 10px;
-    border-color: var(--darkgreen);
+.margin-bottom-button {
+    margin-bottom: 20px;
+  
 }
 
 /* healthy food heading background */
@@ -168,8 +167,8 @@ footer {
 /* RECIPES.HTML PAGE */
 
 .recipe-image {
-    height: 200px; /* Adjust the height as needed */
-    width: 100%; /* Adjust the width as needed */
+    height: 200px;
+    width: 100%; 
     object-fit: cover; /* Ensure the image covers the entire container */
 }
 

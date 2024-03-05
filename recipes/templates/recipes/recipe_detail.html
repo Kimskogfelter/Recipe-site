@@ -31,8 +31,8 @@
         </div>
         {% if request.user == recipe.user %} 
                 <div class="text-center">
-                    <a href="{% url 'edit_recipe' recipe.id %}" class="btn mt-2 btn-outline-success">Edit</a>
-                    <a href="{% url 'delete_recipe' recipe.id %}" class="btn mt-2 btn-outline-success">Delete</a>
+                    <a href="{% url 'edit_recipe' recipe.id %}" class="btn mt-2 btn-outline-success margin-bottom-button ">Edit recipe</a>
+                    <a href="{% url 'delete_recipe' recipe.id %}" class="btn mt-2 btn-outline-success margin-bottom-button ">Delete recipe</a>
                 </div>
                 {% endif %}
     </div>
