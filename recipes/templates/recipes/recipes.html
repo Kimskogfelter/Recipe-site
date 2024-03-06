@@ -16,6 +16,17 @@
                     <div class="card-body">
                         <h2 class="card-title main-text">{{recipe.title}}</h2>
                         <p class="card-text main-text">{{recipe.description|truncatechars:100}}</p>
+                        <div class="rating">
+                            <form method="post" action="{% url 'recipe_rating' recipe.id %}" >
+                                {% csrf_token %}
+                                <input type="radio" name="rating" id="rating-star1"> <label for="rating-star1"></label>
+                                <input type="radio" name="rating" id="rating-star2"> <label for="rating-star2"></label>
+                                <input type="radio" name="rating" id="rating-star3"> <label for="rating-star3"></label>
+                                <input type="radio" name="rating" id="rating-star4"> <label for="rating-star4"></label>
+                                <input type="radio" name="rating" id="rating-star5"> <label for="rating-star5"></label>
+                                
+                            </form>
+                        </div>
                     </div>
                 </div>
             </a>

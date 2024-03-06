@@ -3,6 +3,7 @@
 {% block title %}Recipe Detail - {{recipe.title}}{% endblock %}
 
 {% block content %} 
+
     <div class="container center-div">
         <div class="recipe-info mt-3 p-1">
             <div class="recipe-img">
@@ -16,10 +17,14 @@
                 <p class=""><strong>Calories: </strong> {{ recipe.calories }}</p>
                 <p class=""><strong>Food Type: </strong> {{ recipe.food_type|title }}</p>
                 <div class="rating">
-                    <form method="post" action="{% url 'recipe_rating' recipe.id %}">
+                    <form method="post" action="{% url 'recipe_rating' recipe.id %}" >
                         {% csrf_token %}
-                        <input type="hidden" name="rating" value="5"> 
-                        <button type="submit">Rate Recipe</button>
+                        <input type="radio" name="rating" id="rating-star1"> <label for="rating-star1"></label>
+                        <input type="radio" name="rating" id="rating-star2"> <label for="rating-star2"></label>
+                        <input type="radio" name="rating" id="rating-star3"> <label for="rating-star3"></label>
+                        <input type="radio" name="rating" id="rating-star4"> <label for="rating-star4"></label>
+                        <input type="radio" name="rating" id="rating-star5"> <label for="rating-star5"></label>
+                        
                     </form>
                 </div>
 
