@@ -56,7 +56,6 @@ main {
 .heading-text {
   
     color: white;
-    background-color: #49892a;
     text-shadow: 0 2px 4px #000000d9;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -248,6 +247,41 @@ footer {
     display: flex;
     flex-direction: row;
 }
+
+
+/* ABOUT.HTML PAGE */
+
+/* makes the corners rounded */
+#about-page-image {
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* CONTACT.HTML PAGE */
+
+/* rounded corners for contact image */
+.contact-text-div {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+/* colored background behind contact text */
+.contact-text-bg {
+    background-color: lightcoral;
+    border-radius: 20px;
+    width: 250px;
+    height: 200px;
+    margin-left: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+   
+  
+}
+
 /* MEDIA QUERIES */
 
 /* Media query: landscape phones (576px maximum) */

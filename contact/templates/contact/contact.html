@@ -1,1 +1,48 @@
-{% extends 'base.html' %}
+{% extends "base.html" %} 
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<div class="contact-main-div">
+    <div class="contact-text-div healthy-food-background">
+        <div class="contact-text-bg">
+
+<h1 class="text-center p-2 d-block heading-text ">
+    Contact Us
+ </h1>
+ <p class="text-center heading-text">Feel free to contact us if you got any questions. We are happy to help you get started on your journey to become a more healthier and happier you.</p>
+</div>
+</div>
+<div class="container text-center">
+    
+
+    <div class="row justify-content-center mt-4">
+        <form>
+            <div class="form-row">
+              <div class="mb-3">
+                <label for="validationDefault01">First name</label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+              </div>
+              <div class="mb-3">
+                <label for="validationDefault02">Last name</label>
+                <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+              </div>
+              <div class="mb-3">
+                <div id="div_id_email" class="mb-3"> <label for="id_email" class="form-label requiredField">
+                    Email<span class="asteriskField">*</span> </label> <input type="email" name="email" placeholder="Email address" autocomplete="email" maxlength="320" class="textinput form-control" required="" id="id_email"> </div>
+              </div>
+              <div class="mb-3">
+                <label for="validationTextarea">Textarea</label>
+                <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                <div class="invalid-feedback">
+                  Please enter a message in the textarea.
+                </div>
+            </div>
+          
+            <button class="btn mt-2 btn-outline-success mb-4" type="submit">Submit form</button>
+          </form>
+        </div>
+</div>
+</div>
+{% endblock %}
+
