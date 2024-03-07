@@ -349,6 +349,14 @@ img.healthy-you-logo {
   .recipe-pic {
     width: 570px;
   }
+
+
+  /* CONTACT.HTML PAGE */
+
+  .contact-text-bg {
+    margin-left: 100px;
+  }
+
 }
 
 /* Media query: Screens bigger then 1200px */
@@ -359,6 +367,49 @@ img.healthy-you-logo {
 
 .recipe-card-bigger-screens {
     width: 400px;
+}
+
+
+
+/* CONTACT.HTML PAGE */
+
+/* main div around the contact text and form divs */
+.contact-main-div {
+    display: flex;
+    
+}
+
+/* div with the background image behind the contact text */
+.contact-text-div {
+    height: 80vh;
+    width: 40%;
+    margin-bottom: 0;
+}
+
+/* pink background behind contact text */
+.contact-text-bg {
+    height: 270px;
+    width: 270px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+/* contact text parapraph */
+.contact-p {
+    font-size: large;
+}
+
+/* div around the contact form */
+.contact-form-div {
+    width: 60%;
+}
+
+/* the contact form */
+.contact-form {
+    width: 700px;
+    margin-top: 170px;
 }
 
 }
