@@ -390,6 +390,13 @@ img.healthy-you-logo {
 
 /* Media query: screens bigger then 768px */
 @media screen and (min-width: 768px) {
+
+
+    /* HOME PAGE /INDEX.HTML PAGE */
+
+    .home-text-bg {
+        height: 400px;
+    }
     
   /* RECIPE_DETAIL.HTML PAGE */
 
@@ -426,7 +433,7 @@ img.healthy-you-logo {
     background-color: rgba(73, 137, 42, 0.8);
     border-radius: 20px;
     width: 50vw;
-    height: 20vh;
+    height: 30vh;
     padding: 20px;
     margin-left: 25%;
     position: relative;
@@ -442,6 +449,13 @@ img.healthy-you-logo {
     background-position: center;
     background-size: 100%;
     
+}
+
+/* home page anchor tags */
+.home-tag {
+    width: 150px;
+    height: 40px;
+    font-size: larger;
 }
 
 
