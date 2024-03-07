@@ -41,8 +41,8 @@
         
       </ul> 
       <!-- search bar -->
-      <form class="form-inline">
-        <input class="form-control mr-sm-2 search-window" type="search" placeholder="Search" aria-label="Search">
+      <form class="form-inline" role="search" method="GET" action="{% url 'recipes' %}">
+        <input class="form-control mr-sm-2 search-window" type="search" placeholder="Search" aria-label="Search" name="searchquery">
         <button class="btn btn-outline-success my-2 my-sm-0 search-button" type="submit">Search</button>
       </form>
     </div>

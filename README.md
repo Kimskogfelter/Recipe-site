@@ -126,3 +126,4 @@ Happy coding!
    pasta with veggies: https://www.pexels.com/sv-se/foto/mat-tallrik-halsosam-lunch-1279330/
    fruit bowl: https://www.pexels.com/sv-se/foto/mat-kall-natur-dryck-4553031/
    smoothie with berries: https://www.pexels.com/sv-se/foto/mat-halsosam-tra-sommar-434295/
+   banana waffle: https://www.pexels.com/sv-se/foto/mat-vindruvor-banan-skivad-8165393/

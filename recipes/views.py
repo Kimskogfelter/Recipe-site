@@ -26,14 +26,17 @@ class Recipes(ListView):
     model = Recipe
     context_object_name = "recipes"
 
+    """ query for the search bar in the header """
+
     def get_queryset(self, **kwargs):
-        query = self.request.GET.get("q")
-        if query:
-            recipes = self.model.objects.filter(
-                Q(title__icontains=query)
-                | Q(description__icontains=query)
-                | Q(instructions__icontains=query)
-                | Q(food_type__icontains=query)
+        search_query = self.request.GET.get("searchquery")
+        if search_query:
+           recipes = self.model.objects.filter(
+                Q(title__icontains=search_query) |
+                Q(description__icontains=search_query) |
+                Q(instructions__icontains=search_query) |
+                Q(food_type__icontains=search_query) |
+                Q(meal_type__icontains=search_query)
             )
         else:
             recipes = self.model.objects.all()
