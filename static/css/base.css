@@ -269,7 +269,7 @@ footer {
 
 /* colored background behind contact text */
 .contact-text-bg {
-    background-color: lightcoral;
+    background-color: var(--green);
     border-radius: 20px;
     width: 250px;
     height: 200px;
