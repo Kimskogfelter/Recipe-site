@@ -162,6 +162,54 @@ footer {
     border-radius: 5px;
 }
 
+/* HOME PAGE/ INDEX.HTML PAGE */
+
+/* div with healthy food background */
+.home-text-div {
+    height: 700px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+/* colored background for home text */
+.home-text-bg {
+    background-color: rgba(73, 137, 42, 0.8);
+    border-radius: 20px;
+    width: 70vw;
+    height: 600px;
+    padding: 20px;
+    margin-left: 15%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+/* background image */
+.home-page-image {
+    background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* anchor tags */
+.home-tag {
+    background-color: var(--darkgreen);
+    color: var(--off-white);
+    width: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* hover effect on achor tags */
+.home-tag:hover {
+    background-color: var(--off-white);
+    color: var(--darkgreen);
+}
+
 /* RECIPES.HTML PAGE */
 
 .recipe-image {
@@ -359,8 +407,42 @@ img.healthy-you-logo {
 
 }
 
+
 /* Media query: Screens bigger then 1200px */
 @media screen and (min-width: 1200px) { 
+
+ 
+/* HOME PAGE/ INDEX.HTML PAGE */
+
+/* div with healthy food background */
+.home-text-div {
+    height: 50vh;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+}
+
+/* colored background for home text */
+.home-text-bg {
+    background-color: rgba(73, 137, 42, 0.8);
+    border-radius: 20px;
+    width: 50vw;
+    height: 20vh;
+    padding: 20px;
+    margin-left: 25%;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+
+}
+
+/* background image */
+.home-page-image {
+    background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    background-size: 100%;
+    
+}
 
 
 /* RECIPES.HTML PAGE */
@@ -370,6 +452,10 @@ img.healthy-you-logo {
 }
 
 /* CONTACT.HTML PAGE */
+
+.healthy-food-background {
+    background-size: cover;
+}
 
 /* main div around the contact text and form divs */
 .contact-main-div {
