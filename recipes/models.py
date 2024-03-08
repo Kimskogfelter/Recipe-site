@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.conf import settings
 
 from djrichtextfield.models import RichTextField
 from django_resized import ResizedImageField
@@ -62,3 +63,18 @@ class Recipe(models.Model):
 
     def _str__(self):
         return str(self.title)
+
+
+class Comment(models.Model):
+
+    """
+    A model for the comment section in the recipe detail view
+    """
+
+    recipe = models.ForeignKey('Recipe', on_delete=models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    text = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def get_absolute_url(self):
+        return reverse('recipe_detail', args=[str(self.recipe.id)])

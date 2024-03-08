@@ -13,8 +13,11 @@ from django.db.models import Q
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 
+from django.shortcuts import render, redirect
+
 from .models import Recipe
 from .forms import RecipeForm
+from .forms import CommentForm
 
 from django.http import HttpResponseRedirect
 from django.urls import reverse
@@ -59,6 +62,17 @@ class RecipeDetail(DetailView):
     template_name = "recipes/recipe_detail.html"
     model = Recipe
     context_object_name = "recipe"
+
+    def recipe_detail_comment(request, recipe_id):
+        recipe = Recipe.objects.get(pk=recipe_id)
+        form = CommentForm(request.POST or None)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.recipe = recipe
+            comment.user = request.user
+            comment.save()
+            return redirect('recipe_detail', recipe_id=recipe_id)
+        return render(request, 'recipe_detail.html', {'recipe': recipe, 'form': form})
 
 
 

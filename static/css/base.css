@@ -367,6 +367,7 @@ img.healthy-you-logo {
     width: 350px;
   }
 
+
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
 
@@ -464,6 +465,16 @@ img.healthy-you-logo {
 .recipe-card-bigger-screens {
     width: 400px;
 }
+
+
+/* RECIPE_DETAIL.HTML PAGE */
+
+  /* comment section */
+
+  .comment-container {
+    display: flex;
+    flex-direction: column;
+  }
 
 /* CONTACT.HTML PAGE */
 
