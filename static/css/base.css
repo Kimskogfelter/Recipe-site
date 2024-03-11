@@ -314,6 +314,24 @@ footer {
     border-top-right-radius: 50px;
 }
 
+/* rounded corners for contact image */
+.about-heading-div {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* colored background behind contact text */
+.about-heading-bg {
+    background-color: var(--green);
+    border-radius: 20px;
+    width: 250px;
+    margin-left: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /* CONTACT.HTML PAGE */
 
 /* rounded corners for contact image */
@@ -484,6 +502,32 @@ img.healthy-you-logo {
     display: flex;
     flex-direction: column;
   }
+
+/* ABOUT.HTML PAGE */
+
+/* main div around the contact text and form divs */
+.about-main-div {
+    display: flex;
+    
+}
+
+/* div with the background image behind the heading text */
+.about-heading-div {
+    height: 80vh;
+    width: 40%;
+    margin-bottom: 0;
+}
+
+/* green background behind heading text */
+.about-heading-bg {
+  
+    width: 270px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 40%;
+    
+}
 
 /* CONTACT.HTML PAGE */
 
