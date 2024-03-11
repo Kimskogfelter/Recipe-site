@@ -127,3 +127,4 @@ Happy coding!
    fruit bowl: https://www.pexels.com/sv-se/foto/mat-kall-natur-dryck-4553031/
    smoothie with berries: https://www.pexels.com/sv-se/foto/mat-halsosam-tra-sommar-434295/
    banana waffle: https://www.pexels.com/sv-se/foto/mat-vindruvor-banan-skivad-8165393/
+   no image picture: https://www.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_33011701.htm

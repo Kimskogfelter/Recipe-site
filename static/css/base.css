@@ -91,6 +91,15 @@ a {
     height: 90px;
 }
 
+/* green heading background */
+
+.green-heading-bg {
+    background-color: var(--green);
+    color: var(--off-white);
+    border-radius: 20px;
+    text-shadow: 0 2px 4px #000000d9;
+}
+
 
 /* HEADER */
 header {
