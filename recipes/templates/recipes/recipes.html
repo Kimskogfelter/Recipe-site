@@ -9,14 +9,17 @@
 <div class="container">
     <div class="row justify-content-center recipe-cards-div">
         {% for recipe in recipes %} 
-        <div class="col-lg-4 col-md-6 col-sm-12 center-div recipe-card-bigger-screens">
+        <div class=" col-md-6 col-sm-12 center-div recipe-card-bigger-screens">
             <a href="{% url 'recipe_detail' recipe.id %}" class="recipes" aria-label="Click to view {{recipe.title}}">
                 <div class="card m-3" style="width: 18rem;">
                     <img src="{{recipe.image.url}}" class="card-img-top recipe-image" alt="{{recipe.image_description}}">
                     <div class="card-body">
+                        <!--recipe title-->
                         <h2 class="card-title main-text">{{recipe.title}}</h2>
+                        <!--recipe description-->
                         <p class="card-text main-text">{{recipe.description|truncatechars:100}}</p>
-                        <div class="rating">
+                        <!--star rating-->
+                        <div class="rating text-center">
                             <form method="post" action="{% url 'recipe_rating' recipe.id %}" >
                                 {% csrf_token %}
                                 <input type="radio" name="rating" id="rating-star1"> <label for="rating-star1"></label>
@@ -31,6 +34,7 @@
                 </div>
             </a>
         </div>
+    
         {% endfor %}
     </div>
 </div>
