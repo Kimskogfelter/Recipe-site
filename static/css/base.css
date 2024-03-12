@@ -221,13 +221,52 @@ footer {
 
 /* RECIPES.HTML PAGE */
 
+
 .recipe-image {
     height: 200px;
     width: 100%; 
     object-fit: cover; /* Ensure the image covers the entire container */
 }
 
+/* changes the placement and look of the heart icon */
+
+.recipes-heart-icon {
+    position: absolute;
+    color: var(--off-white); /* Adjust the color of the heart icon */
+    font-size: 24px; /* Adjust the size of the heart icon */
+    text-decoration: none;
+    margin-left: 2px; 
+
+}
+
+/* changes the color of the heart icon when hovered over */
+
+.recipes-heart-icon:hover {
+    color: var(--darkgreen);
+   
+}
+
+
+
 /* RECIPE_DETAIL.HTML PAGE */
+
+
+/* changes the placement and look of the heart icon */
+
+.recipe-detail-heart-icon {
+    position: absolute;
+    color: var(--off-white); /* Adjust the color of the heart icon */
+    font-size: 24px; /* Adjust the size of the heart icon */
+    text-decoration: none;
+
+}
+
+/* changes the color of the heart icon when hovered over */
+
+.recipe-detail-heart-icon:hover {
+    color: var(--darkgreen);
+   
+}
 
 /* centers the recipe recipe heading, description, calories and food type text */
 .recipe-info {
@@ -239,6 +278,7 @@ footer {
 .recipe-pic {
     border-radius: 25px;
     margin-bottom: 10px;
+    
 }
 
 /* star rating tranform */
