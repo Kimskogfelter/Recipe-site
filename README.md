@@ -20,7 +20,7 @@
 
    # Welcome to my fourth project
 
-## SAFARI RETREAT
+## HEALTHY YOU - RECIPE SITE
 
 ![picture of the mockup of the website](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/mockup-safari-retreat.webp)
 
@@ -28,7 +28,7 @@
 
 ---
 
-It's a website for people who are looking forward to relax in the sun or go on a adventure and join the safaris. Or maybe both! The site offers a beautiful hero image when users first enter the site. The goal is to make people want to stay on the website and get to know more about Safari Retreat and hopefully book a trip. Users can easily navigate to the different pages of the website with the navigation menu at the top. The navigation menu contains a logo which takes the user to the home page if they click on it. It also has four menus: Home, Safari gallery, booking page and contact us. The home page contains information about the retreat and safari tours. If users want to know more or see more images from the safaris there is a link in the safari section, or they can press the navigation menu to get to the safari gallery. Theres also a video in the safari section that shows how a safari tour can be. For the retreat section there is information about the retreat and what activites that users might want to concider do at the resort. Theres also four images that shows how the retreat looks inside and outside the hotellrooms, the private pool and the food you can expect. The booking page are very simple and is a form the user fills in and presses a reserve button to make the booking. The user is then taken to a thank you page which tells them that the information about the booking is sent to their emailadress and that they can contact Safari Retreat if the got any questions. The last page, the contact us page has the Safari Retreats phone number, emailadress and a text message box where users can write their question if they dont want to call or email. If users submit a message in the message field they will be taken to a thank you page that tells them that Safari Retreat will be in touch as soon as possible.
+It's a website for people who are looking for healthy recipes. As a user you can save your favourite recipes to youre profile and add your own recipes if you like. 
 
 ### UX DESIGN
 
@@ -40,14 +40,19 @@ It's a website for people who are looking forward to relax in the sun or go on a
 
   - I want to easy find what the website offers
   - I want to navigate easy through the different menus
-  - I want to find the links to other social media platform where I can find more information about Safari Retreat and what they offer
-  - I want to book a trip
+  - I want to find the links to other social media platform where I can find and search the recipes through other platforms
+  - I want to be able to join the website so I easy can find new/saved recipes
+  - I want to be able to join the website so I can write my own recipes
+  - I want to be able to rate recipes
+  - I want to be able to comment on recipes
   
 - #### As a returning and frequent user
 
-  - I want to see if they have any new activities
-  - I want to see if the safaris been updated with a new route
-  - I might want to contact the Safari Retreat for more information about a request or booking
+  - I want to log in and see saved/created recipes
+  - I want to see if the website is updated with new recipes
+  - I want to be able to update my recipes
+  - I want to be able to answer on commented recipes
+  - I might want to contact Healthy You if I got any questions
   
 #### All users want to be able to scroll through the website on their phones without any disturbing events and easy find what they are looking for
 
@@ -57,26 +62,52 @@ It's a website for people who are looking forward to relax in the sun or go on a
 
 #### HOME PAGE
 
-- The first thing the users see it the beautiful slideshow of different animals they can encounter during the safaris
-- It got two different sections where users can read and look at images/video to get more information about what the Safari Retreat offers at the safari and retreat
-- Due to beautiful pictures and a color scheme that is calm and beautiful we want users to want to know more about what the Safari Retreat got to offer
-- The navigation menu at the top shows the three different sub-pages that users can visit
-  
-#### SAFARI GALLERY PAGE
+- The home page welcomes the user to the Health You website. 
+- A text informs the user what the websites purpose is.
+- The user can click on green links that takes he/she to a specific type of recipe
+- The user can also use the search bar at the top right corner to search for specific recipes
 
-- Offers a beautiful gallery of photos from the different safari rides
-- Want users to be intriged to book a stay at the safari retreat
   
-#### BOOKING PAGE
+#### RECIPES PAGE
 
-- A very simple and easy page for the users to make the booking for the Safari Retreat
-- Users need to enter their first and lastname, email address and which date they want to arrive and return home
-- The booking page also got a thank you page when users submit their booking that says that the information about the booking is coming to the emailaddress and that they can call or email Safari Retreat if they got any questions
+- Shows all the latest recipes
+- The user can click on a specific recipe to see more detail about it
+- Shows the star rating for each recipe
+- A heart symbol is on each recipe so a logged in user can choose to save the recipe to use it later on
+
   
-#### CONTACT US PAGE
+#### RECIPE DETAIL PAGE
 
-- A page where users can find information if they want to contact the Safari Retreat for some reasons. They can either call, email or type a message in a message box
-- If the users do write a message and submit it they come to a thank you page who tells them that Safari Retreat will be in touch as soon as possible
+- The detail page for a recipe
+- Shows the name of the recipe, ingridients, steps on how to make the recipe, a star rating, heart icon to be able to save the recipe
+- The user can choose to edit or delete their own created recipes on this page but needs to be logged in for these functions to show.
+
+
+#### ABOUT US PAGE
+
+- The About Page explains more about Healthy You and the purpose of the website
+  
+#### CONTACT PAGE
+
+- The user can choose to contact Healthy You if he/she got any questions with the form on this page.
+
+#### REGISTRATION PAGE
+
+- If the user want to join the website to be able to save and create own recipes its done in this page.
+
+#### LOG IN PAGE
+
+- If the user want to log in to their own profile and see saved/own recipe its done on this page.
+
+#### PROFILE PAGE
+
+- If the user want to see saved favourite recipes and the recipes they have created its done on this page.
+- The user needs to be logged in to used the feature. 
+
+#### ADD RECIPE PAGE
+
+- If the user want to add a new recipe its done on this page. 
+- The user needs to be logged in to used the feature.
 
 ### FEATURES
 
