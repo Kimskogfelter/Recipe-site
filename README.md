@@ -16,7 +16,7 @@
    smoothie with berries: https://www.pexels.com/sv-se/foto/mat-halsosam-tra-sommar-434295/
    banana waffle: https://www.pexels.com/sv-se/foto/mat-vindruvor-banan-skivad-8165393/
    no image picture: https://www.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_33011701.htm
-   happy woman - for about us page: https://www.pexels.com/sv-se/foto/person-kvinna-staende-kansla-774909/
+   happy woman - for about us page: https://pixabay.com/illustrations/ai-generated-woman-chef-cook-thumb-8600464/
 
 
    # Welcome to my fourth project
