@@ -87,8 +87,8 @@ a {
     background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-size: cover;
     background-position: center;
-    background-size: 100%;
     height: 90px;
+    object-fit: cover; 
 }
 
 /* green heading background */
@@ -354,11 +354,13 @@ footer {
     border-top-right-radius: 50px;
 }
 
-/* rounded corners for contact image */
+/* rounded corners and height for contact page background food image */
 .about-heading-div {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    height: 450px;
     margin-bottom: 10px;
+   
 }
 
 /* colored background behind contact text */
@@ -367,9 +369,16 @@ footer {
     border-radius: 20px;
     width: 250px;
     margin-left: 30px;
+    padding: 5px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.about-page-woman {
+    height: 40vh;
+    width: 70vw;
+    border-radius: 200px;
 }
 
 /* CONTACT.HTML PAGE */
@@ -473,6 +482,23 @@ img.healthy-you-logo {
     width: 570px;
   }
 
+  /* ABOUT.HTML PAGE */
+
+  /* colored background behind contact text */
+.about-heading-bg {
+    width: 400px;
+    margin-left: 100px;
+    padding: 10px;
+    top: 50%;
+    
+}
+
+/* smiling woman picture */
+.about-page-woman {
+    height: 35vh;
+    width: 50vw;
+}
+
 
   /* CONTACT.HTML PAGE */
 
@@ -480,6 +506,19 @@ img.healthy-you-logo {
     margin-left: 100px;
   }
 
+}
+
+/* Media query: Screens bigger then 1024px */
+@media screen and (min-width: 1200px) { 
+
+    /* ABOUT.HTML PAGE */
+
+ /* smiling woman image */
+ .about-page-woman {
+    height: 50vh;
+    width: 40vw;
+    border-radius: 200px;
+}
 }
 
 
@@ -554,7 +593,7 @@ img.healthy-you-logo {
 /* div with the background image behind the heading text */
 .about-heading-div {
     height: 80vh;
-    width: 40%;
+    width: 70%;
     margin-bottom: 0;
 }
 
@@ -567,6 +606,20 @@ img.healthy-you-logo {
     padding-right: 10px;
     top: 40%;
     
+}
+ /* smiling woman image */
+.about-page-woman {
+    height: 40vh;
+    width: 20vw;
+    border-radius: 200px;
+}
+
+/* div with the paragraph and smiling woman image */
+/* makes the div appear more in the center of the screen */
+.about-page-div {
+
+   margin-top: 50px;
+  
 }
 
 /* CONTACT.HTML PAGE */

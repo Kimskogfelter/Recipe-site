@@ -10,6 +10,7 @@
     </button>
     <!-- navigation bar -->
     <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- navigation menu -->
       <ul class="navbar-nav me-auto mb-2">
         <li class="nav-item ">
           <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only"></span></a>
@@ -24,6 +25,7 @@
           <a class="nav-link {% if url_name == 'contact' %}active{% endif %}" href="{% url 'contact' %}">Contact</a>
         </li>
         {% if request.user.is_authenticated %}
+        <!-- navigation menu links that appears when the user is logged in -->
         <li class="nav-item">
           <a class="nav-link {% if url_name == 'profile' %}active{% endif %}" href="{% url 'profile' pk=request.user.pk %}">Profile</a>
         </li>
@@ -36,6 +38,7 @@
         </li>
        
         {% else %}
+        <!-- navigation menu links that appear when the user is not logged in -->
         <li class="nav-item">
           <a class="nav-link {% if url_name == 'accounts_signup' %}active{% endif %}" href="/accounts/signup/">Register</a>
         </li>

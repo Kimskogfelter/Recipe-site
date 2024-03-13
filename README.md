@@ -16,6 +16,7 @@
    smoothie with berries: https://www.pexels.com/sv-se/foto/mat-halsosam-tra-sommar-434295/
    banana waffle: https://www.pexels.com/sv-se/foto/mat-vindruvor-banan-skivad-8165393/
    no image picture: https://www.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_33011701.htm
+   happy woman - for about us page: https://www.pexels.com/sv-se/foto/person-kvinna-staende-kansla-774909/
 
 
    # Welcome to my fourth project
@@ -28,7 +29,7 @@
 
 ---
 
-It's a website for people who are looking for healthy recipes. As a user you can save your favourite recipes to youre profile and add your own recipes if you like. 
+It's a website for people who are looking for healthy recipes. Maybe you just want to eat better and healthier food, or you want to change your body and mind to be the best version of yourself by training and eating better. As a user you can save your favourite recipes to youre profile and add your own recipes if you like. The site offers a appealing hero image when users first enter the site. The goal is to make people want to stay on the website and get to know more about Healthy You and what the site has to offer. Users can easily navigate to the different pages of the website with the navigation menu at the top. The navigation menu contains a logo which takes the user to the home page if they click on it. It also has six menus: Home, Recipes, About, Contact, Register and Log in if the user isnt logged in to the website. If the user has registered and is logged in he/she can see Add Recipe and Log out insted of Register and Log in.  
 
 ### UX DESIGN
 
