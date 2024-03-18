@@ -5,6 +5,8 @@ from django.conf import settings
 from djrichtextfield.models import RichTextField
 from django_resized import ResizedImageField
 
+
+
 # Meal Type Choice Fields
 MEAL_TYPE = (
     ("breakfast", "Breakfast"),
@@ -64,7 +66,7 @@ class Recipe(models.Model):
     def _str__(self):
         return str(self.title)
 
-
+# model for the comment section
 class Comment(models.Model):
 
     """
@@ -78,3 +80,9 @@ class Comment(models.Model):
 
     def get_absolute_url(self):
         return reverse('recipe_detail', args=[str(self.recipe.id)])
+
+
+# model for saved recipes with heart icon
+class SavedRecipe(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)

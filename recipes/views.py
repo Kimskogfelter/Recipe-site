@@ -16,11 +16,27 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
 
 from .models import Recipe
+from .models import SavedRecipe
 from .forms import RecipeForm
 from .forms import CommentForm
 
 from django.http import HttpResponseRedirect
+from django.http import JsonResponse
 from django.urls import reverse
+
+
+def save_recipe(request):
+    """ saves the recipe with the heart icon """
+    if request.method == 'POST' and request.user.is_authenticated:
+        recipe_id = request.POST.get('recipe_id')
+        saved_recipe, created = SavedRecipe.objects.get_or_create(
+            user=request.user,
+            recipe_id=recipe_id
+        )
+        if not created:
+            saved_recipe.delete()
+        return JsonResponse({'status': 'success'})
+    return JsonResponse({'status': 'error'})
 
 class Recipes(ListView):
     """View all recipes"""

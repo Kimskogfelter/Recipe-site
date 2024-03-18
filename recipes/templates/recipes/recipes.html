@@ -10,13 +10,13 @@
 <div class="container">
     <div class="row justify-content-center recipe-cards-div">
         {% for recipe in recipes %} 
-        <div class=" col-md-6 col-sm-12 center-div recipe-card-bigger-screens">
+        <div class="col-lg-4 col-md-6 col-sm-12 center-div recipe-card-bigger-screens">
             <a href="{% url 'recipe_detail' recipe.id %}" class="recipes" aria-label="Click to view {{recipe.title}}">
                 <div class="card m-3" style="width: 18rem;">
                     <div class="recipes-image-container">
                     <img src="{{recipe.image.url}}" class="card-img-top recipe-image" alt="{{recipe.image_description}}">
                      <!-- Heart icon to save recipe -->
-                     <a href="#" target="#" rel="noopener" aria-label="heart icon" class="recipes-heart-icon mt-4 ml-4"><i class="fa-solid fa-heart"></i>
+                     <a href="#" target="#" rel="noopener" aria-label="heart icon" class="recipes-heart-icon mt-4 ml-4" data-recipe-id="{{ recipe.id }}"><i class="fa-solid fa-heart"></i>
                     </a>
                     </div>
                     <div class="card-body">
