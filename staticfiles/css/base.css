@@ -10,8 +10,10 @@
 
     --background: #fff;
     --green: #49892a;
+    --darkgreen: #198754;
     --white: #fff;
     --off-white: #F1EDE1;
+
 
     /* box shadows and border */
     --small-box-shadow: 1px -1px 7px 0 #00000061;
@@ -38,6 +40,67 @@ main {
     flex: 10 auto;
     background-color: var(--white);
 }
+
+/* dark green text */
+.darkgreen-text {
+    color: var(--darkgreen);
+}
+
+/* green text */
+.green-text {
+    color: var(--green);
+}
+
+/* heading text */
+
+.heading-text {
+  
+    color: white;
+    text-shadow: 0 2px 4px #000000d9;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    
+}
+
+/* main text */
+
+.main-text {
+    color: black;
+
+}
+
+/* anchors */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* buttons */
+.margin-bottom-button {
+    margin-bottom: 20px;
+  
+}
+
+/* healthy food heading background */
+.healthy-food-background {
+    background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    height: 90px;
+    object-fit: cover; 
+}
+
+/* green heading background */
+
+.green-heading-bg {
+    background-color: var(--green);
+    color: var(--off-white);
+    border-radius: 20px;
+    text-shadow: 0 2px 4px #000000d9;
+}
+
+
 /* HEADER */
 header {
     background-color: var(--off-white);
@@ -53,14 +116,12 @@ a.nav-link {
 }
 
 /* active link in navbar */
-.navbar-nav .nav-link :active {
-  
-    text-decoration: underline;
+
+.active {
+    border-bottom: 2px solid var(--darkgreen);
+    font-weight: 300;
 }
 
-.navbar-nav .nav-link :hover {
-    text-decoration: underline;
-}
 
 
 /* search bar */
@@ -99,4 +160,512 @@ footer {
 .social-media-icons {
     height: 2rem;
     margin: 1rem;
+}
+
+/* forms */
+
+.form {
+    width: 100%;
+    margin: 3% auto;
+    box-shadow: var(--small-box-shadow);
+    border-radius: 5px;
+}
+
+/* HOME PAGE/ INDEX.HTML PAGE */
+
+/* div with healthy food background */
+.home-text-div {
+    height: 700px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+/* colored background for home text */
+.home-text-bg {
+    background-color: rgba(73, 137, 42, 0.8);
+    border-radius: 20px;
+    width: 70vw;
+    height: 600px;
+    padding: 20px;
+    margin-left: 15%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+/* background image */
+.home-page-image {
+    background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* anchor tags */
+.home-tag {
+    background-color: var(--darkgreen);
+    color: var(--off-white);
+    width: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* hover effect on achor tags */
+.home-tag:hover {
+    background-color: var(--off-white);
+    color: var(--darkgreen);
+}
+
+/* RECIPES.HTML PAGE */
+
+
+.recipe-image {
+    height: 200px;
+    width: 100%; 
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+/* changes the placement and look of the heart icon */
+
+.recipes-heart-icon {
+    position: absolute;
+    color: var(--off-white); /* Adjust the color of the heart icon */
+    font-size: 24px; /* Adjust the size of the heart icon */
+    text-decoration: none;
+    margin-left: 2px; 
+
+}
+
+/* changes the color of the heart icon when hovered over */
+
+.recipes-heart-icon:hover {
+    color: var(--darkgreen);
+   
+}
+
+
+
+/* RECIPE_DETAIL.HTML PAGE */
+
+
+/* changes the placement and look of the heart icon */
+
+.recipe-detail-heart-icon {
+    position: absolute;
+    color: var(--off-white); /* Adjust the color of the heart icon */
+    font-size: 24px; /* Adjust the size of the heart icon */
+    text-decoration: none;
+
+}
+
+/* changes the color of the heart icon when hovered over */
+
+.recipe-detail-heart-icon:hover {
+    color: var(--darkgreen);
+   
+}
+
+/* centers the recipe recipe heading, description, calories and food type text */
+.recipe-info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.recipe-pic {
+    border-radius: 25px;
+    margin-bottom: 10px;
+    
+}
+
+/* star rating tranform */
+/* make the transformation go from left to right insted of right to left */
+.rating {
+    
+    transform: translate(-38%) rotateY(180deg);
+}
+
+/* hides the input element */
+.rating input {
+  display: none;
+}
+
+
+.rating label {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    position: relative; 
+    
+}
+
+/* the color of the rating star before clicked/hovered over */
+.rating label:before {
+    content: '\f005';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: relative;
+    display: block;
+    font-size: 30px;
+    color: #F1EDE1;
+    z-index: 1;
+
+}
+
+/* the color of the rating star after clicked/hovered over */
+.rating label:after {
+    content: '\f005';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    display: block;
+    font-size: 30px;
+    color: var(--darkgreen);
+    z-index: 2;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+    
+
+}
+
+/* makes the color of the rating star change when hovered or checked */
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after  {
+    opacity: 1;
+}
+
+.rating form {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* ABOUT.HTML PAGE */
+
+/* makes the corners rounded */
+#about-page-image {
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* rounded corners and height for contact page background food image */
+.about-heading-div {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 450px;
+    margin-bottom: 10px;
+   
+}
+
+/* colored background behind contact text */
+.about-heading-bg {
+    background-color: var(--green);
+    border-radius: 20px;
+    width: 250px;
+    margin-left: 30px;
+    padding: 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about-page-woman {
+    height: 40vh;
+    width: 70vw;
+    border-radius: 200px;
+}
+
+/* CONTACT.HTML PAGE */
+
+/* rounded corners for contact image */
+.contact-text-div {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+/* colored background behind contact text */
+.contact-text-bg {
+    background-color: var(--green);
+    border-radius: 20px;
+    width: 250px;
+    height: 200px;
+    margin-left: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+   
+  
+}
+
+/* MEDIA QUERIES */
+
+/* Media query: landscape phones (576px maximum) */
+@media screen and (max-width: 576px) {
+
+
+/* HEADER.HTML */
+
+/* logo */
+img.healthy-you-logo {
+    height: 60px;
+    width: 200px;
+}
+
+/* toggle icon */
+.navbar-toggler {
+    margin-right: 10px;
+  }
+  }
+
+  /* RECIPES.HTML PAGE */
+
+  /* center recipe div */
+
+  .center-div {
+  display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  /* RECIPE_DETAIL.HTML PAGE */
+
+  /* make recipe image smaller */
+  .recipe-pic {
+    width: 350px;
+  }
+
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+
+ 
+ /* HEADER.HTML */
+
+  /* toggle icon */
+.navbar-toggler {
+    margin-right: 10px;
+    height: 3em;
+    width: 4em;
+  }
+
+  /* toggle icon image */
+  .navbar-toggler-icon {
+    background-size: 150%;
+
+  }
+}
+
+
+/* Media query: screens bigger then 768px */
+@media screen and (min-width: 768px) {
+
+
+    /* HOME PAGE /INDEX.HTML PAGE */
+
+    .home-text-bg {
+        height: 400px;
+    }
+    
+  /* RECIPE_DETAIL.HTML PAGE */
+
+  /* make recipe image bigger */
+  .recipe-pic {
+    width: 570px;
+  }
+
+  /* ABOUT.HTML PAGE */
+
+  /* colored background behind contact text */
+.about-heading-bg {
+    width: 400px;
+    margin-left: 100px;
+    padding: 10px;
+    top: 50%;
+    
+}
+
+/* smiling woman picture */
+.about-page-woman {
+    height: 35vh;
+    width: 50vw;
+}
+
+
+  /* CONTACT.HTML PAGE */
+
+  .contact-text-bg {
+    margin-left: 100px;
+  }
+
+}
+
+/* Media query: Screens bigger then 1024px */
+@media screen and (min-width: 1200px) { 
+
+    /* ABOUT.HTML PAGE */
+
+ /* smiling woman image */
+ .about-page-woman {
+    height: 50vh;
+    width: 40vw;
+    border-radius: 200px;
+}
+}
+
+
+/* Media query: Screens bigger then 1200px */
+@media screen and (min-width: 1200px) { 
+
+ 
+/* HOME PAGE/ INDEX.HTML PAGE */
+
+/* div with healthy food background */
+.home-text-div {
+    height: 50vh;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+}
+
+/* colored background for home text */
+.home-text-bg {
+    background-color: rgba(73, 137, 42, 0.8);
+    border-radius: 20px;
+    width: 50vw;
+    height: 30vh;
+    padding: 20px;
+    margin-left: 25%;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+
+}
+
+/* background image */
+.home-page-image {
+    background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    background-size: 100%;
+    
+}
+
+/* home page anchor tags */
+.home-tag {
+    width: 150px;
+    height: 40px;
+    font-size: larger;
+}
+
+
+/* RECIPES.HTML PAGE */
+
+.recipe-card-bigger-screens {
+    width: 400px;
+}
+
+
+/* RECIPE_DETAIL.HTML PAGE */
+
+  /* comment section */
+
+  .comment-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* ABOUT.HTML PAGE */
+
+/* main div around the contact text and form divs */
+.about-main-div {
+    display: flex;
+    
+}
+
+/* div with the background image behind the heading text */
+.about-heading-div {
+    height: 80vh;
+    width: 70%;
+    margin-bottom: 0;
+}
+
+/* green background behind heading text */
+.about-heading-bg {
+  
+    width: 270px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 40%;
+    
+}
+ /* smiling woman image */
+.about-page-woman {
+    height: 40vh;
+    width: 20vw;
+    border-radius: 200px;
+}
+
+/* div with the paragraph and smiling woman image */
+/* makes the div appear more in the center of the screen */
+.about-page-div {
+
+   margin-top: 50px;
+  
+}
+
+/* CONTACT.HTML PAGE */
+
+.healthy-food-background {
+    background-size: cover;
+}
+
+/* main div around the contact text and form divs */
+.contact-main-div {
+    display: flex;
+    
+}
+
+/* div with the background image behind the contact text */
+.contact-text-div {
+    height: 80vh;
+    width: 40%;
+    margin-bottom: 0;
+}
+
+/* pink background behind contact text */
+.contact-text-bg {
+    height: 270px;
+    width: 270px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 40%;
+    
+}
+
+/* contact text parapraph */
+.contact-p {
+    font-size: large;
+}
+
+/* div around the contact form */
+.contact-form-div {
+    width: 60%;
+}
+
+/* the contact form */
+.contact-form {
+    width: 700px;
+    margin-top: 170px;
+}
+
 }
