@@ -213,7 +213,13 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 - favicon from [ttps://fontawesome.com/icons/puzzle-piece?f=classic&s=solid&pc=%234e6858]
 - used [https://favicon.io/favicon-converter/] to generate the favicon
 - [https://www.remove.bg/] to remove background from favicon
-- video in safari section in the index.html page from [https://www.youtube.com/watch?v=Krh9ccPOx-M]
+- Python
+- Django
+- Bootstrap
+- HTML
+- CSS
+- Cloudinary
+- ElephantSQL
 
 ### WIREFRAMES
 

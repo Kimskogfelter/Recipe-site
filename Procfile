@@ -1,1 +1,1 @@
-web: gunicorn recipe-site.wsgi
+web: gunicorn main.wsgi
