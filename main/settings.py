@@ -212,4 +212,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-kimskogfelte-recipesite-kj2l9ydts1i.ws-eu110.gitpod.io',  'https://*.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://8000-kimskogfelte-recipesite-kj2l9ydts1i.ws-eu110.gitpod.io',  'https://*.herokuapp.com', 'healthy-you-recipe-site-0b4400e888c9.herokuapp.com/']
