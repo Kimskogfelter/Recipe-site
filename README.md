@@ -213,6 +213,7 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 #### HOME PAGE
 
 - Changed the text and icons in the footer to be centered
+- Decided to remove the recipes to their own page and insted have clickable links for different food type recipes
 
 ![Home page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Home%20page.webp)
 
