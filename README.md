@@ -3,7 +3,7 @@
 
 ## HEALTHY YOU - RECIPE SITE
 
-![picture of the mockup of the website](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/mockup-safari-retreat.webp)
+![picture of the mockup of the website](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/mockup-healthy-you.webp)
 
 ### PURPOSE
 
