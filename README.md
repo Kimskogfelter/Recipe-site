@@ -1,21 +1,4 @@
 
-
-* images: 
-   chicken sallad: https://www.freepik.com/free-photo/chicken-parmesan-caesar-salad-with-lettuce-cherry-tomatoes-inside-white-bowl-served-with-sauce-bread_5021765.htm#fromView=search&page=1&position=6&uuid=3b5f8b3c-e970-41a7-9c08-3c56c5e6f051
-   background for recipes.html heading: https://www.pexels.com/sv-se/foto/mat-tallrik-halsosam-gronsaker-1640777/
-   steak with veggies: https://www.pexels.com/sv-se/foto/mat-tallrik-sallad-halsosam-361184/
-   egg and avocado sandwich: https://www.pexels.com/sv-se/foto/brod-mat-smorgas-rostat-brod-824635/
-   fruit bowl: https://www.pexels.com/sv-se/foto/mat-halsosam-frukt-fargrik-1105166/
-   smoothie: https://www.pexels.com/sv-se/foto/mat-kall-halsosam-kvinna-3679973/
-   fish and veggies: https://www.pexels.com/sv-se/foto/matratt-aptitretare-kok-matfotografi-1516415/
-   pasta with veggies: https://www.pexels.com/sv-se/foto/mat-tallrik-halsosam-lunch-1279330/
-   fruit bowl: https://www.pexels.com/sv-se/foto/mat-kall-natur-dryck-4553031/
-   smoothie with berries: https://www.pexels.com/sv-se/foto/mat-halsosam-tra-sommar-434295/
-   banana waffle: https://www.pexels.com/sv-se/foto/mat-vindruvor-banan-skivad-8165393/
-   no image picture: https://www.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_33011701.htm
-   happy woman - for about us page: https://pixabay.com/illustrations/ai-generated-woman-chef-cook-thumb-8600464/
-
-
    # Welcome to my fourth project
 
 ## HEALTHY YOU - RECIPE SITE
@@ -211,6 +194,7 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 - [https://validator.w3.org/nu/] to validate html code
 - [https://jigsaw.w3.org/css-validator/] to validate css code
+- Python is valified throught PEP8 
 - used [https://favicon.io/favicon-converter/] to generate the favicon
 - [https://www.remove.bg/] to remove background from favicon
 - Python
@@ -218,6 +202,7 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 - Bootstrap
 - HTML
 - CSS
+- Javascript
 - Cloudinary
 - ElephantSQL
 
@@ -267,7 +252,7 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 - The site is also responsive which I tested in google chromes devtools by selecting different screensizes and test each function
 - I tested that all text is easy to read and to understand
 - The HTML and CSS got valified through both CSS and HTML validators
-- The Python is valified through PEP8 ?!?!?
+- The Python is valified through PEP8
 - The Javascript is valified through ...
 - I tested all the code through the whole webpage though these stages: 
   - 
