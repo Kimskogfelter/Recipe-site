@@ -509,7 +509,7 @@ img.healthy-you-logo {
 }
 
 /* Media query: Screens bigger then 1024px */
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width: 1024px) { 
 
     /* ABOUT.HTML PAGE */
 
@@ -615,7 +615,6 @@ img.healthy-you-logo {
 }
 
 /* div with the paragraph and smiling woman image */
-/* makes the div appear more in the center of the screen */
 .about-page-div {
 
    margin-top: 50px;

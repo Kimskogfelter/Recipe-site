@@ -1,8 +1,5 @@
 
-* logo from https://app.logo.com/dashboard/your-logo-files
-* icons from https://uxwing.com/tag/social-media-icons/page/3/
-* youtube tutorial https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1
-* youtube tutorial for star rating https://www.youtube.com/watch?v=Ep78KjstQuw
+
 * images: 
    chicken sallad: https://www.freepik.com/free-photo/chicken-parmesan-caesar-salad-with-lettuce-cherry-tomatoes-inside-white-bowl-served-with-sauce-bread_5021765.htm#fromView=search&page=1&position=6&uuid=3b5f8b3c-e970-41a7-9c08-3c56c5e6f051
    background for recipes.html heading: https://www.pexels.com/sv-se/foto/mat-tallrik-halsosam-gronsaker-1640777/
@@ -116,14 +113,14 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 #### HEADER AND NAVIGATION BAR/MENU
 
-- The header is at the top of the website and contains the logo and the navigation bar/menu. For screens bigger then 768px you can see all the different navigation menus at the top at the right side of the header logo.
-- Users can easy find the websites different pages through the navigation menu where they can go to the Safari Gallery, Booking Page or Contact Us page.
+- The header is at the top of the website and contains the logo and the navigation bar/menu. For screens bigger then 1024px you can see all the different navigation menus at the top at the right side of the header logo.
+- Users can easy find the websites different pages through the navigation menu where they can go to the Recipes, About, Contact, Register or Log in page. 
 - The logo in the top left corner of the navigation bar is also a link to the home page.
-- The user can see both the logo and navigation menu easy because of the color scheme of darkgreen and white
+- The user can see both the logo and navigation menu easy because of the color scheme of the offwhite background with the green text
 
-![picture of the header and navigation bar for screens bigger then 768px](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/header-and-navbar.jpg)
+![picture of the header and navigation bar for screens bigger then 1024px](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/header-and-navbar.jpg)
 
-- For mobile phones the navigation menu tursn into a bar icon which they can click on to activate the navigation menu
+- For mobile phones the navigation menu turns into a hamburger bar icon which they can click on to activate the navigation menu
 
 ![picture of the header and navigation bar for mobile phones](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/header-and-navbar-mobile.jpg)
 
@@ -131,86 +128,89 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 - #### HERO IMAGE
 
-  - The hero image is the first thing you notice when you enter the website. The goal is to make the users want to book a trip to see the beautiful animals thats shown in the hero image
-  - The hero image also got a slideshow that automatic change the images after a few seconds
-  - Users can also see the yellow and green heading that draws your eyes to it. The goal is that the users want to continue to read further down on the website and see what Safari Retreat got to offer
+  - The hero image is one of the first things you notice when you enter the website. The goal is to make the users want to stay and want to search for delicious recipes to make on their own
 
-![picture of hero image and heading under it](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/hero-image.jpg)
+![picture of hero image](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/hero-image.jpg)
 
-#### The home page got two different sections where the users can find information about the retreat and the safari
+- #### CLICKABLE LINKS
 
-- #### RETREAT SECTION
+  - The home page also got clickable links under the hero image
+  - Each link goes to a different type of food recipes
+  - This is to make users want to explore more and easy be able to that directly from the home page 
 
-  - The Retreat section tells the user about the retreat where they can choose from different activities during the day or just relax by their own private pool.
-  - It also got four images to show how the room, food and porch looks like
-  - The goal is to make the users want to book a trip
+![picture of the clickable links under the hero image](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/retreat-section.jpg)
 
-![picture of the old Retreat section at the home page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/retreat-section.jpg)
+#### RECIPES PAGE
 
-- I wanted to change how the layout was for the retreat section as it didnt look good with the four pictures like the above images shows
-- I decided to add one picture of food and make it like two sections, one that shows the hotel room and one thats show the food that Safari Retreat offers
+- Its at the recipes page the user can see all the recipes that is added to the webpage
+- The user can press the heart icon to save a recipe to their own profile if they are logged in
+- The user can also rate the recipe if they are logged in
 
-![picture of the new Retreat section at the home page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/retreat-section1.jpg)
-![picture of the new Retreat section at the home page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/retreat-section2.jpg)
 
-- #### SAFARI SECTION
+![picture of recipes page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/safari-gallery-page.jpg)
 
-  - The Safari section tells the user about the safari and what a experience that is that you dont want to miss
-  - Users can choose to only book the safari for the trip and then need to contact the Safari Retreat to get help with the booking
-  - Users can also watch a video from a safari. The goal is to make people want to book a trip to see it for themselfes
+- #### RECIPE DETAIL PAGE
 
-![picture of Safari section at the home page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/safari-section.jpg)
+  - If the user click on a recipe they are taken to the detail page of that recipe
+  - It shows the ingredients, instructions, rating and any comments that made
 
-#### SAFARI GALLERY PAGE
+![picture of recipe detail page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/safari-gallery-page.jpg)
 
-- Its at the Safari Gallery page that users can see images from the safari tours that Safari Retreat offers
-- Its goal is to make the users want to book the safari by showing all the beautiful pictures of the different animals in the african savannah
+#### ABOUT PAGE
 
-![picture of safari gallery page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/safari-gallery-page.jpg)
+- The about page describes what the user can do on the Healthy You webpage and what its purpose
+- It also got a picture of a woman in the kitchen thats going to act as the owner of the webpage
 
-#### BOOKING PAGE
+![picture of the about page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/booking-page.jpg)
 
-- The booking page shows a form that the users need to fill in to book a stay at the Safari Retreat
-- Its very easy to understand because it got labels who describe what the users need to fill in, i order to make the booking form complete
-- At the end it got a reserve button which activates when you click on it and takes the users to a thank you page
+#### CONTACT PAGE
 
-![picture of the new booking page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/booking-page.jpg)
+- If users needs to contact Healthy You for some reason they can go to the contact page and fill in the form
 
-#### THANK YOU PAGE FOR THE BOOKING PAGE
+![picture of the contact page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/contact-us.jpg)
 
-- This is the thank you pge the users is taken to when they have made a booking through the booking page
+#### REGISTER PAGE
 
-![picture of the thank you page for the booking page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/booking-page-thankyou-page.jpg)
+- If the user want to create a user to be able to create and save/comment on recipe its done on this page
 
-#### CONTACT US PAGE
+![picture of the register page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/contact-us-thankyou-page.jpg)
 
-- If users needs to contact the Safari Retreat for some reason they can go to the contact us page which they find in the navigation bar/menu at the top of the page
-- The users can contact the Safari Retreat through phone, email or via a message box
-- Users write their request in the message box and then press the submit button at the bottom of the green transparent background. When the message is submited the user it taken to a thank you page that tells them that they will be contacted as soon as possible
+#### LOG IN PAGE
 
-![picture of the contact us page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/contact-us.jpg)
+- If the user want to log in to be able to see created or saved recipes and edit their own recipes or comments its done on this page
 
-#### THANK YOU PAGE FOR THE CONTACT US PAGE
+![picture of the log in page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/contact-us-thankyou-page.jpg)
 
-- This it the thank you page the users it taken to if they choose to write and submit a message in the message box at the Contact Us page
+#### PROFILE PAGE
 
-![picture of the thank you page for the contact us page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/contact-us-thankyou-page.jpg)
+- If the user want to see their own recipes or recipes that they have liked its done on this page
+- The user needs to be logged in for this page to show
+
+![picture of the profile page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/contact-us-thankyou-page.jpg)
+
+#### ADD RECIPE PAGE
+
+- If the user want to add their own recipe to the Healthy You webpage its done on this page
+- The user needs to be logged in for this page to show
+
+![picture of the add recipe page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/contact-us-thankyou-page.jpg)
 
 ### COLOR SCHEME
 
 ---
 
-- The color scheme through the whole page is #4e6458, #ffffff, #f0c66dd0, #45534b and #97afa7d0.
+- The color on the background of the header and footer is a beautiful off-white #F1EDE1.
+- The color of the logo and navigation menu text is green #49892a, to stand out from the off-white background color
+- The color of the all buttons is a darker green #198754, to stand out more from the rest of the content. They are first white with a darkgreen text and border, but when hovered over they text turns white and the background turns to dark green
+- The main background is white to make the header and footer stand out more from the rest of the content
+
 
 ### TECHNOLOGIES
 
 ---
 
-- icons in subheadings and footer are from [https://fontawesome.com/]
 - [https://validator.w3.org/nu/] to validate html code
 - [https://jigsaw.w3.org/css-validator/] to validate css code
-- [https://www.pexels.com/sv-se/] and [https://pikwizard.com/] for images
-- favicon from [ttps://fontawesome.com/icons/puzzle-piece?f=classic&s=solid&pc=%234e6858]
 - used [https://favicon.io/favicon-converter/] to generate the favicon
 - [https://www.remove.bg/] to remove background from favicon
 - Python
@@ -229,17 +229,35 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 ![Home page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/home-page.webp)
 
-#### SAFARI GALLERY PAGE
+#### RECIPES PAGE
 
-![Safari gallery page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/safari-gallery.webp)
+![Recipes page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/safari-gallery.webp)
 
-#### BOOKING PAGE
+#### RECIPES DETAIL PAGE
 
-![Booking page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/booking-page.webp)
+![Recipes detail page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/booking-page.webp)
 
-#### CONTACT US PAGE
+#### ABOUT PAGE
 
-![Contact Us page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/contact-us.webp)
+![About page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/contact-us.webp)
+
+#### CONTACT PAGE
+
+![Contact page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/contact-us.webp)
+
+#### REGISTER PAGE
+
+![Register page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/contact-us.webp)
+
+#### LOG IN PAGE
+
+![Log in page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/contact-us.webp)
+
+#### The profile and add recipe pages was made after I had finished the wireframes. They were made when I did the tutorial on Youtube for the webpage. Before that I had in mind to only have a saved recipes page that showed up when the user was logged in insted of a profile page. But quickly realized that I needed more subheadings on the saved recipes page and there for choose to create the profile page insted 
+
+#### SAVED RECIPES PAGE
+
+![Saved recipes page made in wireframes, that is unused due to changing it to a profile page insted](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/contact-us.webp)
 
 ### TESTING
 
@@ -248,11 +266,15 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 - I tested the website in Chrome, Firefox and Edge browser to see that all pages loaded and that every link, button, form, image and navigation menu was working
 - The site is also responsive which I tested in google chromes devtools by selecting different screensizes and test each function
 - I tested that all text is easy to read and to understand
-- The code got valified through both CSS and HTML validators
+- The HTML and CSS got valified through both CSS and HTML validators
+- The Python is valified through PEP8 ?!?!?
+- The Javascript is valified through ...
+- I tested all the code through the whole webpage though these stages: 
+  - 
 
 #### BUGS
 
-- when I first deployed this project the images and css code didnt work. the solution was to correct all the pathways to relative ones insted of absolute.
+- No bugs found
 
 #### LIGHTHOUSE
 
@@ -266,45 +288,69 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 ![lighthouse result for home page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/Homepage-desktop.webp)
 
-- #### Safari Gallery Page - Mobile version
+- #### Recipes Page - Mobile version
 
-![lighthouse result for safari gallery page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/Safarigallery-mobile.webp)
+![lighthouse result for recipes page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/Safarigallery-mobile.webp)
 
-- #### Safari Gallery Page - Desktop version
+- #### Recipes Page - Desktop version
 
-![lighthouse result for safari gallery page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/Safarigallery-desktop.webp)
+![lighthouse result for recipes page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/Safarigallery-desktop.webp)
 
-- #### Booking Page - Mobile version
+- #### Recipe Detail Page - Mobile version
 
-![lighthouse result for booking page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/bookingpage-mobile.webp)
+![lighthouse result for recipe detail page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/bookingpage-mobile.webp)
 
-- #### Booking Page - Desktop version
+- #### Recipe Detail Page - Desktop version
 
-![lighthouse result for booking page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/bookingpage-desktop.webp)
+![lighthouse result for recipe detail page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/bookingpage-desktop.webp)
 
-- #### Contact Us Page - Mobile version
+- #### About Page - Mobile version
 
-![lighthouse result for contact us page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-mobile.webp)
+![lighthouse result for about page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-mobile.webp)
 
-- #### Contact Us Page - Desktop version
+- #### About Page - Desktop version
 
-![lighthouse result for contact us page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-desktop.webp)
+![lighthouse result for about page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-desktop.webp)
 
-- #### Booking Page, Thank you Page - Mobile version
+- #### Contact Page - Mobile version
 
-![lighthouse result for booking pages, thank you page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/bookingpage-thankyou-page-mobile.webp)
+![lighthouse result for contact page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/bookingpage-thankyou-page-mobile.webp)
 
-- #### Booking Page, Thank you page - Desktop version
+- #### Contact Page - Desktop version
 
-![lighthouse result for booking pages, thank you page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/bookingpage-thankyou-page-deskttop.webp)
+![lighthouse result for contact page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/bookingpage-thankyou-page-deskttop.webp)
 
-- #### Contact Page, Thank you page - Mobile version
+- #### Register page - Mobile version
 
-![lighthouse result for contact us pages, thank you page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-mobile.webp)
+![lighthouse result for register page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-mobile.webp)
 
-- #### Contact Page, Thank you page - Desktop version
+- #### Register page - Desktop version
 
-![lighthouse result for contact us pages, thank you page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-desktop.webp)
+![lighthouse result for register page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-desktop.webp)
+
+- #### Log in page - Mobile version
+
+![lighthouse result for log in page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-mobile.webp)
+
+- #### Log in page - Desktop version
+
+![lighthouse result for log in page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-desktop.webp)
+
+- #### Profile page - Mobile version
+
+![lighthouse result for profile page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-mobile.webp)
+
+- #### Profile page - Desktop version
+
+![lighthouse result for profile page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-desktop.webp)
+
+- #### Add recipe page - Mobile version
+
+![lighthouse result for add recipe page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-mobile.webp)
+
+- #### Add recipe page - Desktop version
+
+![lighthouse result for add recipe page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-desktop.webp)
 
 ### DEPLOYMENT
 
@@ -312,7 +358,7 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
     This project was deployed to Github.com. The following steps shows how you do it:
 
 1. Log in to your Github.
-2. Go to the Safari Retreat repository in Github: [https://github.com/Kimskogfelter/Safari-Retreat]
+2. Go to the Recipe Site repository in Github: [https://github.com/Kimskogfelter/Recipe-site]
 3. Select Settings in the repository navigation menu at the top.
 4. Select Pages at the left handside of the website.
 5. Choose: Deploy from a branch as Source.
@@ -321,10 +367,15 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 8. At the right handside go to Deployment.
 9. Then press the ![picture of the deployment icon on github](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/deployment-icon.jpg) to go to the live website.
 
+    This project was also deployed to Heroku.com. The following steps shows how you do it:
+1. 
+
+    This project uses a database from ElephantSQL. The following steps shows how you create a database through ElephantSQL:
+1.  
+
 ### ISSUES
 
-- The form in the Booking page looks squished together in the firefox browser only. All the other pages looks like they should in firefox, edge and chrome
-- The IDE i was working with (Code Anywhere) have been very buggy during this time ive been working with this project. The last two weeks I couldnt see any changes I made unless I commited and pushed to Git. Which have made the project get many commits
+- 
 
 ### CREDITS
 
@@ -332,15 +383,27 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 #### MEDIA
 
-- [https://www.pexels.com/sv-se/] and [https://pikwizard.com/] for images
+- favicon from [ttps://fontawesome.com/icons/puzzle-piece?f=classic&s=solid&pc=%234e6858]
+- logo in header are from https://app.logo.com/dashboard/your-logo-files
+- icons in the footer are from https://uxwing.com/tag/social-media-icons/page/3/
+- The images are from the below sources:
+  - chicken sallad: https://www.freepik.com/free-photo/chicken-parmesan-caesar-salad-with-lettuce-cherry-tomatoes-inside-white-bowl-served-with-sauce-bread_5021765.htm#fromView=search&page=1&position=6&uuid=3b5f8b3c-e970-41a7-9c08-3c56c5e6f051
+  - background for recipes.html heading: https://www.pexels.com/sv-se/foto/mat-tallrik-halsosam-gronsaker-1640777/
+  - steak with veggies: https://www.pexels.com/sv-se/foto/mat-tallrik-sallad-halsosam-361184/
+  - egg and avocado sandwich: https://www.pexels.com/sv-se/foto/brod-mat-smorgas-rostat-brod-824635/
+  - fruit bowl: https://www.pexels.com/sv-se/foto/mat-halsosam-frukt-fargrik-1105166/
+  - smoothie: https://www.pexels.com/sv-se/foto/mat-kall-halsosam-kvinna-3679973/
+  - fish and veggies: https://www.pexels.com/sv-se/foto/matratt-aptitretare-kok-matfotografi-1516415/
+  - pasta with veggies: https://www.pexels.com/sv-se/foto/mat-tallrik-halsosam-lunch-1279330/
+  - fruit bowl: https://www.pexels.com/sv-se/foto/mat-kall-natur-dryck-4553031/
+  - smoothie with berries: https://www.pexels.com/sv-se/foto/mat-halsosam-tra-sommar-434295/
+  - banana waffle: https://www.pexels.com/sv-se/foto/mat-vindruvor-banan-skivad-8165393/
+  - no image picture: https://www.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_33011701.htm
+  - happy woman - for about us page: https://pixabay.com/illustrations/ai-generated-woman-chef-cook-thumb-8600464/
 
 #### CODE
 
-- The code for the social media links in the footer are taken from Love Running project. [https://github.com/Code-Institute-Solutions/Love-Running-Solutions.git]
-- the media querys comments in css are taken from Love Running project. [https://github.com/Code-Institute-Solutions/Love-Running-Solutions.git]
-- used information from the site, [https://stackoverflow.com/questions/50178709/set-my-logo-to-the-left-and-navigation-menu-to-the-right-using-flexbox] to make the toggle navigation menu stick to the right side
-- used [https://blog.hubspot.com/website/center-div-css#center-div-css] to center the informations text div
-- code for the hero slide was taken from [https://www.youtube.com/watch?v=Ef8LxpRPGRA]
-- code for the meta tags for the search engines results are from the Love Running project [https://github.com/Code-Institute-Solutions/Love-Running-Solutions.git]
+- I useed this youtube tutorial to help me make the webpage https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1
+- I used this youtube tutorial for helping me make the star rating for the recipes https://www.youtube.com/watch?v=Ep78KjstQuw
 
-#### All the thanks to the lovely students on slack for helping out when needed and my tutor Ronan for being so supportive and helpfull
+#### All the thanks to the lovely students on slack for helping out when needed and my mentor Ronan for being so supportive and helpfull
