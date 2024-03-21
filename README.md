@@ -212,37 +212,51 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 #### HOME PAGE
 
-![Home page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/home-page.webp)
+- Changed the text and icons in the footer to be centered
+
+![Home page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Home%20page.webp)
 
 #### RECIPES PAGE
 
-![Recipes page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/safari-gallery.webp)
+![Recipes page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Recipes%20main%20page.webp)
 
 #### RECIPES DETAIL PAGE
 
-![Recipes detail page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/booking-page.webp)
+- Added a heart icon so the user can save favourite recipes
+
+![Recipes detail page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Recipe%20page.webp)
 
 #### ABOUT PAGE
 
-![About page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/contact-us.webp)
+- Decided to add text about the webpage in the image to the left and add a little image and little text to the right to make it look more appealing
+
+![About page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20About%20page.webp)
 
 #### CONTACT PAGE
 
-![Contact page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/contact-us.webp)
+- Decided to make the contact page have the same layout as the about page with a picture to the left with a text describing what the user can do on that page. This because i want the webpage to have a similar theme
+
+![Contact page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Contact%20page.webp)
 
 #### REGISTER PAGE
 
-![Register page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/contact-us.webp)
+- Decided to make the log in and register page to have a similar look so the pages follows a similar theme
+- Decided to remove the image to the left so the page only got the form left
+
+![Register page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Registration%20page.webp)
 
 #### LOG IN PAGE
 
-![Log in page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/contact-us.webp)
+- Decided to make the log in and register page to have a similar look so the pages follows a similar theme
+- Decided to remove the image to the left so the page only got the form left
+
+![Log in page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Log%20in%20page.webp)
 
 #### The profile and add recipe pages was made after I had finished the wireframes. They were made when I did the tutorial on Youtube for the webpage. Before that I had in mind to only have a saved recipes page that showed up when the user was logged in insted of a profile page. But quickly realized that I needed more subheadings on the saved recipes page and there for choose to create the profile page insted 
 
 #### SAVED RECIPES PAGE
 
-![Saved recipes page made in wireframes, that is unused due to changing it to a profile page insted](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/readme/wireframes/contact-us.webp)
+![Saved recipes page made in wireframes, that is unused due to changing it to a profile page insted](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20view%20saved%20recipes%20page.webp)
 
 ### TESTING
 
