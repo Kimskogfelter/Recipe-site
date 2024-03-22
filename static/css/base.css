@@ -221,6 +221,9 @@ footer {
 
 /* RECIPES.HTML PAGE */
 
+.card-flex {
+    display: flex;
+}
 
 .recipe-image {
     height: 200px;
@@ -281,11 +284,17 @@ footer {
     
 }
 
+
 /* star rating tranform */
 /* make the transformation go from left to right insted of right to left */
 .rating {
     
-    transform: translate(-38%) rotateY(180deg);
+  /*  transform: translate(-38%) rotateY(180deg); */
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
 }
 
 /* hides the input element */

@@ -190,7 +190,11 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
+# Email backend for contact form
 
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+DEFAULT_FROM_EMAIL = "kimskogfelter@outlook.com"
+NOTIFY_EMAIL = "kimskogfelter@outlook.com"
 
 
 # Static files (CSS, JavaScript, Images)
