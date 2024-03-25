@@ -17,14 +17,7 @@ Profile Page </h1>
 
     <div class="row justify-content-center mt-4 profile">
         <div class="profile-info">
-            <div class="profile-pic text-center mb-4">
-                {% if profile.image.url is not none %}
-                <img src="{{ profile.image.url }}" alt="{{ profile.user.username }}'s profile picture" class="img-fluid">
-                {% else %}
-                <img src="{% static '/images/no-image-picture.avif' %}" alt="picture not found" class="img-fluid">
-                {% endif %}
-
-            </div>
+            
             <h1>{{ profile.user.username }}</h1>
             <p><strong>Joined: </strong> {{ profile.user.date_joined |date:'d M Y' }}</p>
             <p><strong>Recipes: </strong>{{ profile.user.recipe_owner.count }}</p>
