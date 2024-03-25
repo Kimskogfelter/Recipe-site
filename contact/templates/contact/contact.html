@@ -18,31 +18,26 @@
     
 
     <div class="row justify-content-center mt-4">
-        <form class="contact-form">
-            <div class="form-row">
-              <div class="mb-3">
-                <label for="validationDefault01">First name</label>
-                <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
-              </div>
-              <div class="mb-3">
-                <label for="validationDefault02">Last name</label>
-                <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
-              </div>
-              <div class="mb-3">
-                <div id="div_id_email" class="mb-3"> <label for="id_email" class="form-label requiredField">
-                    Email<span class="asteriskField">*</span> </label> <input type="email" name="email" placeholder="Email address" autocomplete="email" maxlength="320" class="textinput form-control" required="" id="id_email"> </div>
-              </div>
-              <div class="mb-3">
-                <label for="validationTextarea">Your message</label>
-                <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-                <div class="invalid-feedback">
-                  Please enter a message in the textarea.
-                </div>
-            </div>
-          
-            <button class="btn mt-2 btn-outline-success mb-4" type="submit">Submit form</button>
-            </div>
-          </form>
+      <form method="post" class="justify-content-center">
+        {% csrf_token %}
+        <div>
+            <label for="id_firstname">First Name</label>
+            {{ form.firstname }}
+        </div>
+        <div>
+            <label for="id_lastname">Last Name</label>
+            {{ form.lastname }}
+        </div>
+        <div>
+            <label for="id_email">Email</label>
+            {{ form.email }}
+        </div>
+        <div>
+            <label for="id_message">Message</label>
+            {{ form.message }}
+        </div>
+        <button class="btn btn-outline-success" type="submit">Send Message</button>
+    </form>
         </div>
 </div>
 </div>

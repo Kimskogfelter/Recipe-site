@@ -1,6 +1,6 @@
 from django import forms
 
-class ContactForm (forms.Form):
+class ContactUsForm (forms.Form):
     firstname = forms.CharField(widget=forms.TextInput(attrs={"placeholder": "First name"}))
     lastname = forms.CharField(widget=forms.TextInput(attrs={"placeholder": "Last name"}))
     email = forms.EmailField(

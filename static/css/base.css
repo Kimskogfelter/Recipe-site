@@ -221,10 +221,6 @@ footer {
 
 /* RECIPES.HTML PAGE */
 
-.card-flex {
-    display: flex;
-}
-
 .recipe-image {
     height: 200px;
     width: 100%; 
