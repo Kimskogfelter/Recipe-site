@@ -10,7 +10,7 @@
 <div class="container">
     <div class="row justify-content-center recipe-cards-div">
         {% for recipe in recipes %} 
-        <div class="col-lg-4 col-md-6 col-sm-12 center-div recipe-card-bigger-screens">
+        <div class="col-lg-4 col-md-6 col-sm-12 center-div">
             <a href="{% url 'recipe_detail' recipe.id %}" class="recipes" aria-label="Click to view {{recipe.title}}">
                 <div class="card m-3" style="width: 18rem;">
                     <div class="recipes-image-container">

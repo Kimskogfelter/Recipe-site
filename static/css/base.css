@@ -232,7 +232,7 @@ footer {
 .recipes-heart-icon {
     position: absolute;
     color: var(--off-white); /* Adjust the color of the heart icon */
-    font-size: 24px; /* Adjust the size of the heart icon */
+    font-size: 40px; /* Adjust the size of the heart icon */
     text-decoration: none;
     margin-left: 2px; 
 
@@ -255,7 +255,7 @@ footer {
 .recipe-detail-heart-icon {
     position: absolute;
     color: var(--off-white); /* Adjust the color of the heart icon */
-    font-size: 24px; /* Adjust the size of the heart icon */
+    font-size: 40px; /* Adjust the size of the heart icon */
     text-decoration: none;
 
 }
@@ -570,12 +570,6 @@ img.healthy-you-logo {
     font-size: larger;
 }
 
-
-/* RECIPES.HTML PAGE */
-
-.recipe-card-bigger-screens {
-    width: 400px;
-}
 
 
 /* RECIPE_DETAIL.HTML PAGE */
