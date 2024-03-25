@@ -20,11 +20,11 @@
 
     <div class="row justify-content-center mt-4 mb-3">
 
-        <a href="" class="home-tag">Meat        </a>
-            <a href="" class="home-tag">Fish</a>
-            <a href="" class="home-tag">Cake</a>
-            <a href="" class="home-tag">Pasta</a>
-            <a href="" class="home-tag">Snacks</a>
+        <a href="{% url 'recipes' %}?searchquery=meat" class="home-tag">Meat</a>
+            <a href="{% url 'recipes' %}?searchquery=fish" class="home-tag">Fish</a>
+            <a href="{% url 'recipes' %}?searchquery=cake" class="home-tag">Cake</a>
+            <a href="{% url 'recipes' %}?searchquery=pasta" class="home-tag">Pasta</a>
+            <a href="{% url 'recipes' %}?searchquery=snacks" class="home-tag">Snacks</a>
         </div>
 </div>
 </div>
