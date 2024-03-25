@@ -67,7 +67,7 @@ class Recipe(models.Model):
         return str(self.title)
 
 # model for the comment section
-class Comment(models.Model):
+class CommentRecipe(models.Model):
 
     """
     A model for the comment section in the recipe detail view

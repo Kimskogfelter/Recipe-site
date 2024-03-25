@@ -405,6 +405,7 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 - I useed this youtube tutorial to help me make the webpage https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1
 - I used this youtube tutorial for helping me make the star rating for the recipes https://www.youtube.com/watch?v=Ep78KjstQuw
-- i used the tutorial on this page to make the contact form work https://learndjango.com/tutorials/django-email-contact-form-tutorial
+- I used the tutorial on this page to make the contact form work https://learndjango.com/tutorials/django-email-contact-form-tutorial
+- I used the tutorial on this page for adding comments to a blog post to help med add the comments form to the recipe detail page https://www.geeksforgeeks.org/django-project-to-create-a-comments-system/
 
 #### All the thanks to the lovely students on slack for helping out when needed and my mentor Ronan for being so supportive and helpfull

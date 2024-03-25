@@ -54,10 +54,11 @@
                         {% if not request.user.is_authenticated %}
                             <p>To add a comment please log in.</p>
                         {% else %}
-                            <form method="post">
+                            <form method="post" action="{% url 'recipe_detail' recipe.pk %}">
                                 {% csrf_token %}
-                                {{ form.as_p }}
-                                <button type="submit" class="btn mt-2 btn-outline-success margin-bottom-button">Submit</button>
+                                {% crispy form %} 
+                                {{comment_form.as_p}}
+                                <button type="submit" class="btn mt-2 btn-outline-success margin-bottom-button">Make comment</button>
                             </form>
                         {% endif %}
                     </div>

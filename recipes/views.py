@@ -15,13 +15,10 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 from django.shortcuts import render, redirect
 
-from .models import Recipe
-from .models import SavedRecipe
-from .forms import RecipeForm
-from .forms import CommentForm
+from .models import Recipe, SavedRecipe, CommentRecipe
+from .forms import RecipeForm, CommentRecipeForm
 
-from django.http import HttpResponseRedirect
-from django.http import JsonResponse
+from django.http import HttpResponseRedirect, JsonResponse
 from django.urls import reverse
 
 
@@ -79,17 +76,25 @@ class RecipeDetail(DetailView):
     model = Recipe
     context_object_name = "recipe"
 
-    def recipe_detail_comment(request, recipe_id):
-        recipe = Recipe.objects.get(pk=recipe_id)
-        form = CommentForm(request.POST or None)
-        if form.is_valid():
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['form'] = CommentRecipeForm()  # Initialize the comment form
+        model = CommentRecipe
+        return context
+
+    # Handle form submission for adding a comment
+    def post(self, request, *args, **kwargs):
+        recipe = self.get_object()
+        comment_form = CommentRecipeForm(request.POST)
+        if comment_form.is_valid():
             comment = form.save(commit=False)
             comment.recipe = recipe
             comment.user = request.user
             comment.save()
-            return redirect('recipe_detail', recipe_id=recipe_id)
-        return render(request, 'recipe_detail.html', {'recipe': recipe, 'form': form})
-
+            return redirect('recipe_detail', pk=recipe.pk)
+        else:
+            # Handle invalid form submission here, if needed
+            return render(request, self.template_name, {'recipe': recipe, 'form': form})
 
 
 class AddRecipe(LoginRequiredMixin, CreateView):
