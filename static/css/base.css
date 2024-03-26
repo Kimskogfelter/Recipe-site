@@ -289,76 +289,6 @@ footer {
 }
 
 
-/* star rating tranform */
-/* make the transformation go from left to right insted of right to left */
-.rating {
-    
-  /*  transform: translate(-38%) rotateY(180deg); */
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-}
-
-/* hides the input element */
-.rating input {
-  display: none;
-}
-
-
-.rating label {
-    display: block;
-    cursor: pointer;
-    width: 50px;
-    position: relative; 
-    
-}
-
-/* the color of the rating star before clicked/hovered over */
-.rating label:before {
-    content: '\f005';
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    position: relative;
-    display: block;
-    font-size: 30px;
-    color: #F1EDE1;
-    z-index: 1;
-
-}
-
-/* the color of the rating star after clicked/hovered over */
-.rating label:after {
-    content: '\f005';
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    position: absolute;
-    display: block;
-    font-size: 30px;
-    color: var(--darkgreen);
-    z-index: 2;
-    top: 0;
-    opacity: 0;
-    transition: .5s;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, .4);
-    
-
-}
-
-/* makes the color of the rating star change when hovered or checked */
-.rating label:hover:after,
-.rating label:hover ~ label:after,
-.rating input:checked ~ label:after  {
-    opacity: 1;
-}
-
-.rating form {
-    display: flex;
-    flex-direction: row;
-}
-
-
 /* ABOUT.HTML PAGE */
 
 /* makes the corners rounded */
@@ -536,7 +466,7 @@ img.healthy-you-logo {
 /* div around the contact form and the form itself */
 /* makes them smaller in width */
 .contact-form-div {
-    width: 60%;
+    width: 80%;
 }
 
 }
@@ -674,5 +604,12 @@ img.healthy-you-logo {
 .contact-p {
     font-size: large;
 }
+
+/* div around the contact form and the form itself */
+/* makes them smaller in width */
+.contact-form-div {
+    width: 60%;
+}
+
 
 }

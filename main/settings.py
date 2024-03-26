@@ -29,7 +29,7 @@ if os.path.exists('env.py'):
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["8000-kimskogfelte-recipesite-kj2l9ydts1i.ws-eu110.gitpod.io", ".herokuapp.com", "healthy-you-recipe-site-0b4400e888c9.herokuapp.com/"]
 
