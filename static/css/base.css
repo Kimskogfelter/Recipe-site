@@ -530,6 +530,15 @@ img.healthy-you-logo {
     width: 40vw;
     border-radius: 200px;
 }
+
+/* CONTACT.HTML PAGE */
+
+/* div around the contact form and the form itself */
+/* makes them smaller in width */
+.contact-form-div {
+    width: 60%;
+}
+
 }
 
 
@@ -664,17 +673,6 @@ img.healthy-you-logo {
 /* contact text parapraph */
 .contact-p {
     font-size: large;
-}
-
-/* div around the contact form */
-.contact-form-div {
-    width: 60%;
-}
-
-/* the contact form */
-.contact-form {
-    width: 700px;
-    margin-top: 170px;
 }
 
 }
