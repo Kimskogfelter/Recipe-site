@@ -2,6 +2,7 @@
 
 
 :root {
+
     /* fonts */
     --title: 'Roboto', 'Sans-serif';
     --main-font: 'Roboto', 'Sans-serif';
@@ -20,6 +21,13 @@
     --border: 1px solid #9fa5a0;
 
 }
+
+ /* hides the asterisk in the cripsy forms */
+ .asteriskField {
+    display: none;
+}
+
+/* MAIN STYLING */
 
 html, body {
     height: 100%;
