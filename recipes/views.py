@@ -108,3 +108,20 @@ class DeleteRecipe(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     def test_func(self):
         return self.request.user == self.get_object().user
 
+
+class EditComment(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """Edit comment made on a recipe"""
+    template_name = "recipes/edit_comment.html"
+    model = CommentRecipe
+    form_class = CommentRecipeForm
+    success_url = "/recipes/"
+    def test_func(self):
+        return self.request.user == self.get_object().user
+
+
+class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """Delete comment made on a recipe"""
+    model = CommentRecipe
+    success_url = "/recipes/"
+    def test_func(self):
+        return self.request.user == self.get_object().user
