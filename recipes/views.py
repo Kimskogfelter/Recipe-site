@@ -13,7 +13,7 @@ from django.db.models import Q
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from .models import Recipe, SavedRecipe, CommentRecipe
 from .forms import RecipeForm, CommentRecipeForm
@@ -58,16 +58,6 @@ class Recipes(ListView):
             recipes = self.model.objects.all()
         return recipes
 
-    
-def RecipeRating(request, recipe_id):
-    """ Adds a recipe rating to the recipes """
-    if request.method == 'POST':
-        rating = int(request.POST.get('rating', 0))
-        recipe = Recipe.objects.get(pk=recipe_id)
-        recipe.rating = rating
-        recipe.save()
-    return HttpResponseRedirect(reverse('recipe_detail', args=[recipe_id]))
-
 
 class RecipeDetail(DetailView):
     """View a single recipe"""
@@ -77,24 +67,50 @@ class RecipeDetail(DetailView):
     context_object_name = "recipe"
 
     def get_context_data(self, **kwargs):
+        recipe_id = self.kwargs.get('pk')  # Retrieve the primary key from self.kwargs
+        post = get_object_or_404(Recipe, pk=recipe_id)
         context = super().get_context_data(**kwargs)
+        context['request'] = self.request
         context['form'] = CommentRecipeForm()  # Initialize the comment form
         model = CommentRecipe
+        comments = post.comments.filter(approved=True).order_by("-created_on")
         return context
+
+        return render(
+            request,
+            "recipe_detail.html",
+            {
+                "post": post,
+                "comments": comments,
+                "commented": True,
+                "comment_form": CommentRecipeForm()
+            },
+        )
 
     # Handle form submission for adding a comment
     def post(self, request, *args, **kwargs):
         recipe = self.get_object()
-        comment_form = CommentRecipeForm(request.POST)
-        if comment_form.is_valid():
-            comment = form.save(commit=False)
-            comment.recipe = recipe
-            comment.user = request.user
+        comment_recipe_form = CommentRecipeForm(request=request.POST)
+        if comment_recipe_form.is_valid():
+            comment_recipe_form.recipe = recipe
+            comment_recipe_form.user = request.user
+            comment = comment_recipe_form.save(commit=False)
+            comment.post = post
             comment.save()
-            return redirect('recipe_detail', pk=recipe.pk)
         else:
             # Handle invalid form submission here, if needed
-            return render(request, self.template_name, {'recipe': recipe, 'form': form})
+            comment_recipe_form = CommentRecipeForm()
+        
+        return render(
+            request, 
+            "recipe_detail.html",
+            {
+                "post": post,
+                "comments": comments,
+                "commented": True,
+                "comment_recipe_form": CommentRecipeForm(),
+            }
+        )
 
 
 class AddRecipe(LoginRequiredMixin, CreateView):

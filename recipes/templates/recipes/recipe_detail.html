@@ -40,6 +40,11 @@
                 <div class="row justify-content-center">
                     <!-- Add comment form -->
                     <div class="col-md-6 mt-4">
+                        {% if commented %}
+                <div class="alert alert-success" role="alert">
+                    Your comment is awaiting approval
+                </div>
+                {% else %}
                         <h4>Add a Comment</h4>
                         {% if not request.user.is_authenticated %}
                             <p>To add a comment please log in.</p>
@@ -50,6 +55,7 @@
                                 {{comment_form.as_p}}
                                 <button type="submit" class="btn mt-2 btn-outline-success margin-bottom-button">Make comment</button>
                             </form>
+                        {% endif %}
                         {% endif %}
                     </div>
                     

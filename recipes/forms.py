@@ -41,13 +41,6 @@ class RecipeForm(forms.ModelForm):
 
 
 class CommentRecipeForm(forms.ModelForm):
-    content = forms.CharField(label ="", widget = forms.Textarea(
-    attrs ={
-        'class':'form-control',
-        'placeholder':'Comment here!',
-        'rows':4,
-        'cols':50
-    }))
     class Meta:
         model = CommentRecipe
-        fields =['content']
+        fields = ('body',)

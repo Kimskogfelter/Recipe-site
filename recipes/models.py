@@ -30,6 +30,12 @@ FOOD_TYPE = (
     ("fruit", "Fruit"),
 )
 
+STATUS_RECIPES = (
+        (0, 'Draft'),
+        (1, 'Published'),
+)
+
+
 # Create your models here.
 
 
@@ -60,6 +66,7 @@ class Recipe(models.Model):
     posted_date = models.DateTimeField(auto_now=True) # posted date for the recipe
     recipe_rating = models.IntegerField(default=0)  # recipe star rating
 
+
     class Meta:
         ordering = ["-posted_date"]
 
@@ -73,10 +80,12 @@ class CommentRecipe(models.Model):
     A model for the comment section in the recipe detail view
     """
 
-    recipe = models.ForeignKey('Recipe', on_delete=models.CASCADE)
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='comments')
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    text = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
+    body = models.TextField()  # Adds a body field
+    created_on = models.DateTimeField(auto_now_add=True) # shows when the comment is created
+    approved = models.BooleanField(default=False)  # shows if comment is approved
+    
 
     def get_absolute_url(self):
         return reverse('recipe_detail', args=[str(self.recipe.id)])

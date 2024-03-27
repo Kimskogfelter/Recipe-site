@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import AddRecipe, Recipes, RecipeDetail, DeleteRecipe, EditRecipe, RecipeRating
+from .views import AddRecipe, Recipes, RecipeDetail, DeleteRecipe, EditRecipe
 
 
 urlpatterns = [
@@ -12,5 +12,4 @@ urlpatterns = [
         EditRecipe.as_view(),
         name="edit_recipe",
     ),
-    path("<slug:pk>/rate/", RecipeRating, name="recipe_rating"),  
 ]
