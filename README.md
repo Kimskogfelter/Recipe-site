@@ -53,15 +53,15 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 - Shows all the latest recipes
 - The user can click on a specific recipe to see more detail about it
-- Shows the star rating for each recipe
 - A heart symbol is on each recipe so a logged in user can choose to save the recipe to use it later on
 
   
 #### RECIPE DETAIL PAGE
 
 - The detail page for a recipe
-- Shows the name of the recipe, ingridients, steps on how to make the recipe, a star rating, heart icon to be able to save the recipe
+- Shows the name of the recipe, ingridients, steps on how to make the recipe, heart icon to be able to save the recipe
 - The user can choose to edit or delete their own created recipes on this page but needs to be logged in for these functions to show.
+- The user can leave a comment on the recipe of they are logged in. Also edit/delete and old comment they have made
 
 
 #### ABOUT US PAGE
@@ -127,7 +127,6 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 - Its at the recipes page the user can see all the recipes that is added to the webpage
 - The user can press the heart icon to save a recipe to their own profile if they are logged in
-- The user can also rate the recipe if they are logged in
 
 
 ![picture of recipes page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/safari-gallery-page.jpg)
@@ -135,7 +134,10 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 - #### RECIPE DETAIL PAGE
 
   - If the user click on a recipe they are taken to the detail page of that recipe
-  - It shows the ingredients, instructions, rating and any comments that made
+  - It shows the ingredients, instructions, and any comments that made
+  - The user can press the heart icon to save a recipe to their own profile if they are logged in
+  - The user can leave a comment if they are logged in
+  - If any user have made a comment they are published at the bottom of the webpage, under the recipe
 
 ![picture of recipe detail page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/safari-gallery-page.jpg)
 
@@ -224,6 +226,7 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 #### RECIPES DETAIL PAGE
 
 - Added a heart icon so the user can save favourite recipes
+- Added a comment function so a logged in user can comment on the recipe
 
 ![Recipes detail page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Recipe%20page.webp)
 
@@ -405,6 +408,6 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 - I useed this youtube tutorial to help me make the webpage https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1
 - I used the tutorial on this page to make the contact form work https://learndjango.com/tutorials/django-email-contact-form-tutorial
-- I used the tutorial on this page for adding comments to a blog post to help med add the comments form to the recipe detail page https://www.geeksforgeeks.org/django-project-to-create-a-comments-system/
+- I used the tutorial on this page for adding comments to a blog post to help med add the comments form to the recipe detail page https://www.geeksforgeeks.org/django-project-to-create-a-comments-system/ and the old "I Think Therefore I Blog  Authorisation, Commenting and Likes  Commenting - part 2" in the LMS. 
 
 #### All the thanks to the lovely students on slack for helping out when needed and my mentor Ronan for being so supportive and helpfull

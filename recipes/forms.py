@@ -5,7 +5,6 @@ from .models import Recipe, CommentRecipe
 
 class RecipeForm(forms.ModelForm):
     """Form to create a recipe"""
-
     class Meta:
         model = Recipe
         fields = [
@@ -19,14 +18,11 @@ class RecipeForm(forms.ModelForm):
             "food_type",
             "calories",
         ]
-
         ingredients = forms.CharField(widget=RichTextWidget())
         instructions = forms.CharField(widget=RichTextWidget())
-
         widget = {
             "description": forms.Textarea(attrs={"rows": 5}),
         }
-
         labels = {
             "title": "Recipe Title",
             "description": "Description",
@@ -43,4 +39,7 @@ class RecipeForm(forms.ModelForm):
 class CommentRecipeForm(forms.ModelForm):
     class Meta:
         model = CommentRecipe
-        fields = ('body',)
+        fields =['text']
+    def __init__(self, *args, **kwargs):
+        super(CommentRecipeForm, self).__init__(*args, **kwargs)
+        self.fields['text'].label = False

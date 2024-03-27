@@ -1,10 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.conf import settings
-
 from djrichtextfield.models import RichTextField
 from django_resized import ResizedImageField
-
 
 
 # Meal Type Choice Fields
@@ -14,6 +12,7 @@ MEAL_TYPE = (
     ("dinner", "Dinner"),
     ("snack", "Snack"),
 )
+
 
 # Food Type Choice Fields
 FOOD_TYPE = (
@@ -30,11 +29,6 @@ FOOD_TYPE = (
     ("fruit", "Fruit"),
 )
 
-STATUS_RECIPES = (
-        (0, 'Draft'),
-        (1, 'Published'),
-)
-
 
 # Create your models here.
 
@@ -43,7 +37,6 @@ class Recipe(models.Model):
     """
     A model to create and change/delete recipes
     """
-
     user = models.ForeignKey(
         User, related_name="recipe_owner", on_delete=models.CASCADE
     )
@@ -65,30 +58,25 @@ class Recipe(models.Model):
     calories = models.IntegerField()
     posted_date = models.DateTimeField(auto_now=True) # posted date for the recipe
     recipe_rating = models.IntegerField(default=0)  # recipe star rating
-
-
     class Meta:
         ordering = ["-posted_date"]
-
     def _str__(self):
         return str(self.title)
 
+
 # model for the comment section
 class CommentRecipe(models.Model):
-
     """
     A model for the comment section in the recipe detail view
     """
-
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='comments')
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    body = models.TextField()  # Adds a body field
-    created_on = models.DateTimeField(auto_now_add=True) # shows when the comment is created
-    approved = models.BooleanField(default=False)  # shows if comment is approved
-    
-
-    def get_absolute_url(self):
-        return reverse('recipe_detail', args=[str(self.recipe.id)])
+    text = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    def __str__(self):
+        return 'Comment {} by {}'.format(self.text, self.user)
+    # def get_absolute_url(self):
+    #     return reverse('recipe_detail', args=[str(self.recipe.id)])
 
 
 # model for saved recipes with heart icon
