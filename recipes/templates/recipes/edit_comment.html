@@ -5,7 +5,7 @@
 {% block content %}
 <div class="container">
     <form method="POST" enctype="multipart/form-data" class="p-2 form">
-        <h1 class="text-center">Edit Recipe</h1>
+        <h1 class="text-center">Edit Comment</h1>
         {% csrf_token %}
         {{ form.media }} 
         {{ form|crispy }}

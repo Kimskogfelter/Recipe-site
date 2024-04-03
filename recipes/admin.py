@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import Recipe
+from .models import RecipeModel
 
 # Register your models here.
 
 
-@admin.register(Recipe)
+@admin.register(RecipeModel)
 class RecipeAdmin(admin.ModelAdmin):
     list_display = (
         "title",

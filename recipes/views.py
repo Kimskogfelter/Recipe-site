@@ -10,16 +10,16 @@ from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.db.models import Q
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Recipe, CommentRecipe
+from .models import RecipeModel, CommentRecipeModel
 from .forms import RecipeForm, CommentRecipeForm
 from django.http import HttpResponseRedirect, JsonResponse
 from django.urls import reverse
 
 
-class Recipes(ListView):
+class RecipesView(ListView):
     """View all recipes"""
     template_name = "recipes/recipes.html"
-    model = Recipe
+    model = RecipeModel
     context_object_name = "recipes"
     """ query for the search bar in the header """
     def get_queryset(self, **kwargs):
@@ -37,12 +37,12 @@ class Recipes(ListView):
         return recipes
 
 
-def RecipeDetail(request, pk):
+def RecipeDetailView(request, pk):
     """View a single recipe"""
     template_name = "recipes/recipe_detail.html"
-    recipe = get_object_or_404(Recipe, pk=pk)
+    recipe = get_object_or_404(RecipeModel, pk=pk)
     comment = None
-    comments = CommentRecipe.objects.filter(recipe=recipe)
+    comments = CommentRecipeModel.objects.filter(recipe=recipe)
     if request.method == "POST":
         comment_form = CommentRecipeForm(data=request.POST)
         if comment_form.is_valid():
@@ -66,49 +66,50 @@ def RecipeDetail(request, pk):
     )
 
 
-class AddRecipe(LoginRequiredMixin, CreateView):
+class AddRecipeView(LoginRequiredMixin, CreateView):
     """Add recipe view"""
     template_name = "recipes/add_recipe.html"
-    model = Recipe
+    model = RecipeModel
     form_class = RecipeForm
     success_url = "/recipes/"
     def form_valid(self, form):
         form.instance.user = self.request.user
-        return super(AddRecipe, self).form_valid(form)
+        return super(AddRecipeView, self).form_valid(form)
 
 
-class EditRecipe(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+class EditRecipeView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """Edit recipe"""
     template_name = "recipes/edit_recipe.html"
-    model = Recipe
+    model = RecipeModel
     form_class = RecipeForm
     success_url = "/recipes/"
     def test_func(self):
         return self.request.user == self.get_object().user
 
 
-class DeleteRecipe(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+class DeleteRecipeView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """Delete recipe"""
-    model = Recipe
+    model = RecipeModel
     success_url = "/recipes/"
+    template_name = 'recipes/recipe_confirm_delete.html'
     def test_func(self):
         return self.request.user == self.get_object().user
 
 
-class EditComment(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+class EditCommentView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """Edit comment made on a recipe"""
     template_name = "recipes/edit_comment.html"
-    model = CommentRecipe
+    model = CommentRecipeModel
     form_class = CommentRecipeForm
     success_url = "/recipes/"
     def test_func(self):
         return self.request.user == self.get_object().user
 
 
-class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+class DeleteCommentView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """Delete comment made on a recipe"""
     template_name = "recipes/comment_confirm_delete.html"
-    model = CommentRecipe
+    model = CommentRecipeModel
     success_url = "/recipes/"
     def test_func(self):
         return self.request.user == self.get_object().user

@@ -33,7 +33,7 @@ FOOD_TYPE = (
 # Create your models here.
 
 
-class Recipe(models.Model):
+class RecipeModel(models.Model):
     """
     A model to create and change/delete recipes
     """
@@ -57,19 +57,18 @@ class Recipe(models.Model):
     food_type = models.CharField(max_length=45, choices=FOOD_TYPE, default="sandwich")
     calories = models.IntegerField()
     posted_date = models.DateTimeField(auto_now=True) # posted date for the recipe
-    recipe_rating = models.IntegerField(default=0)  # recipe star rating
     class Meta:
         ordering = ["-posted_date"]
-    def _str__(self):
+    def __str__(self):
         return str(self.title)
 
 
 # model for the comment section
-class CommentRecipe(models.Model):
+class CommentRecipeModel(models.Model):
     """
     A model for the comment section in the recipe detail view
     """
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
+    recipe = models.ForeignKey(RecipeModel, on_delete=models.CASCADE)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     text = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)

@@ -1,12 +1,12 @@
 from django import forms
 from djrichtextfield.widgets import RichTextWidget
-from .models import Recipe, CommentRecipe
+from .models import RecipeModel, CommentRecipeModel
 
 
 class RecipeForm(forms.ModelForm):
     """Form to create a recipe"""
     class Meta:
-        model = Recipe
+        model = RecipeModel
         fields = [
             "title",
             "description",
@@ -38,7 +38,7 @@ class RecipeForm(forms.ModelForm):
 
 class CommentRecipeForm(forms.ModelForm):
     class Meta:
-        model = CommentRecipe
+        model = CommentRecipeModel
         fields =['text']
     def __init__(self, *args, **kwargs):
         super(CommentRecipeForm, self).__init__(*args, **kwargs)
