@@ -41,10 +41,10 @@
         {% else %}
         <!-- navigation menu links that appear when the user is not logged in -->
         <li class="nav-item">
-          <a class="nav-link {% if url_name == 'accounts_signup' %}active{% endif %}" href="/accounts/signup/">Register</a>
+          <a class="nav-link {% if request.path == '/accounts/signup/' %}active{% endif %}" href="/accounts/signup/">Register</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if url_name == 'accounts_login' %}active{% endif %}" href="/accounts/login/">Log in</a>
+          <a class="nav-link {% if request.path == '/accounts/login/' %}active{% endif %}" href="/accounts/login/">Log in</a>
         </li>
         {% endif %}
         
