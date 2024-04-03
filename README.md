@@ -402,7 +402,6 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
   - smoothie with berries: https://www.pexels.com/sv-se/foto/mat-halsosam-tra-sommar-434295/
   - banana waffle: https://www.pexels.com/sv-se/foto/mat-vindruvor-banan-skivad-8165393/
   - chocolate cake: https://www.pexels.com/sv-se/foto/47013/
-  - happy woman - for about us page: https://pixabay.com/illustrations/ai-generated-woman-chef-cook-thumb-8600464/
 
 #### CODE
 
