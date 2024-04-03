@@ -2,6 +2,7 @@
 
 
 :root {
+
     /* fonts */
     --title: 'Roboto', 'Sans-serif';
     --main-font: 'Roboto', 'Sans-serif';
@@ -20,6 +21,13 @@
     --border: 1px solid #9fa5a0;
 
 }
+
+ /* hides the asterisk in the cripsy forms */
+ .asteriskField {
+    display: none;
+}
+
+/* MAIN STYLING */
 
 html, body {
     height: 100%;
@@ -221,52 +229,15 @@ footer {
 
 /* RECIPES.HTML PAGE */
 
-
 .recipe-image {
     height: 200px;
     width: 100%; 
     object-fit: cover; /* Ensure the image covers the entire container */
 }
 
-/* changes the placement and look of the heart icon */
-
-.recipes-heart-icon {
-    position: absolute;
-    color: var(--off-white); /* Adjust the color of the heart icon */
-    font-size: 24px; /* Adjust the size of the heart icon */
-    text-decoration: none;
-    margin-left: 2px; 
-
-}
-
-/* changes the color of the heart icon when hovered over */
-
-.recipes-heart-icon:hover {
-    color: var(--darkgreen);
-   
-}
-
-
 
 /* RECIPE_DETAIL.HTML PAGE */
 
-
-/* changes the placement and look of the heart icon */
-
-.recipe-detail-heart-icon {
-    position: absolute;
-    color: var(--off-white); /* Adjust the color of the heart icon */
-    font-size: 24px; /* Adjust the size of the heart icon */
-    text-decoration: none;
-
-}
-
-/* changes the color of the heart icon when hovered over */
-
-.recipe-detail-heart-icon:hover {
-    color: var(--darkgreen);
-   
-}
 
 /* centers the recipe recipe heading, description, calories and food type text */
 .recipe-info {
@@ -279,70 +250,6 @@ footer {
     border-radius: 25px;
     margin-bottom: 10px;
     
-}
-
-/* star rating tranform */
-/* make the transformation go from left to right insted of right to left */
-.rating {
-    
-    transform: translate(-38%) rotateY(180deg);
-}
-
-/* hides the input element */
-.rating input {
-  display: none;
-}
-
-
-.rating label {
-    display: block;
-    cursor: pointer;
-    width: 50px;
-    position: relative; 
-    
-}
-
-/* the color of the rating star before clicked/hovered over */
-.rating label:before {
-    content: '\f005';
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    position: relative;
-    display: block;
-    font-size: 30px;
-    color: #F1EDE1;
-    z-index: 1;
-
-}
-
-/* the color of the rating star after clicked/hovered over */
-.rating label:after {
-    content: '\f005';
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    position: absolute;
-    display: block;
-    font-size: 30px;
-    color: var(--darkgreen);
-    z-index: 2;
-    top: 0;
-    opacity: 0;
-    transition: .5s;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, .4);
-    
-
-}
-
-/* makes the color of the rating star change when hovered or checked */
-.rating label:hover:after,
-.rating label:hover ~ label:after,
-.rating input:checked ~ label:after  {
-    opacity: 1;
-}
-
-.rating form {
-    display: flex;
-    flex-direction: row;
 }
 
 
@@ -375,11 +282,6 @@ footer {
     transform: translateY(-50%);
 }
 
-.about-page-woman {
-    height: 40vh;
-    width: 70vw;
-    border-radius: 200px;
-}
 
 /* CONTACT.HTML PAGE */
 
@@ -401,10 +303,8 @@ footer {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    
-   
-  
 }
+
 
 /* MEDIA QUERIES */
 
@@ -493,13 +393,6 @@ img.healthy-you-logo {
     
 }
 
-/* smiling woman picture */
-.about-page-woman {
-    height: 35vh;
-    width: 50vw;
-}
-
-
   /* CONTACT.HTML PAGE */
 
   .contact-text-bg {
@@ -513,12 +406,21 @@ img.healthy-you-logo {
 
     /* ABOUT.HTML PAGE */
 
- /* smiling woman image */
- .about-page-woman {
-    height: 50vh;
-    width: 40vw;
-    border-radius: 200px;
+
+/* class for all paragraph to change size */
+
+.about-us-p {
+    font-size: large;
 }
+
+/* CONTACT.HTML PAGE */
+
+/* div around the contact form and the form itself */
+/* makes them smaller in width */
+.contact-form-div {
+    width: 80%;
+}
+
 }
 
 
@@ -568,10 +470,9 @@ img.healthy-you-logo {
 
 /* RECIPES.HTML PAGE */
 
-.recipe-card-bigger-screens {
-    width: 400px;
+.recipes-cards-div {
+    width: 100%;
 }
-
 
 /* RECIPE_DETAIL.HTML PAGE */
 
@@ -607,19 +508,11 @@ img.healthy-you-logo {
     top: 40%;
     
 }
- /* smiling woman image */
-.about-page-woman {
-    height: 40vh;
-    width: 20vw;
-    border-radius: 200px;
-}
 
-/* div with the paragraph and smiling woman image */
 .about-page-div {
-
-   margin-top: 50px;
-  
+    margin-top: 50px; /* Adjust the value as needed to push the div further down */
 }
+
 
 /* CONTACT.HTML PAGE */
 
@@ -656,15 +549,11 @@ img.healthy-you-logo {
     font-size: large;
 }
 
-/* div around the contact form */
+/* div around the contact form and the form itself */
+/* makes them smaller in width */
 .contact-form-div {
-    width: 40%;
+    width: 60%;
 }
 
-/* the contact form */
-.contact-form {
-    width: 700px;
-    margin-top: 170px;
-}
 
 }
