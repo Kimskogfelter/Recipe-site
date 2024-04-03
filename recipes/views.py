@@ -121,6 +121,7 @@ class EditComment(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
 class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """Delete comment made on a recipe"""
+    template_name = "recipes/comment_confirm_delete.html"
     model = CommentRecipe
     success_url = "/recipes/"
     def test_func(self):

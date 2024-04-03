@@ -13,12 +13,12 @@ urlpatterns = [
         name="edit_recipe",
     ),
     path(
-        "edit/<slug:pk>/",
+        "comment/edit/<slug:pk>/",
         EditComment.as_view(),
         name="edit_comment",
     ),
     path(
-        "edit/<slug:pk>/",
+        "comment/delete/<slug:pk>/",
         DeleteComment.as_view(),
         name="delete_comment",
     ),
