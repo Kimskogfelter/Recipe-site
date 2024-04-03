@@ -36,18 +36,6 @@ Profile Page </h1>
             <hr>
             {% endfor %}
         </div>
-        <div class="profile-liked-recipes">
-            <h2 class="text-center pb-3 green-heading-bg pt-3">Liked Recipes</h2>
-            {% for recipe in profile.user.likes.all %}
-                <a href="{% url 'recipe_detail' recipe.id %}">
-                    <h3>{{ recipe.title }}</h3>
-                </a>
-                {{ recipe.posted_date }}
-                <hr>
-            {% empty %}
-                <p class="text-center">No liked recipes yet.</p>
-            {% endfor %}
-        </div>
     </div>
     <!-- The Modal -->
     <div id="myModal" class="modal mt-5">

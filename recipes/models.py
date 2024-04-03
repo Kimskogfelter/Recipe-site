@@ -77,9 +77,3 @@ class CommentRecipe(models.Model):
         return 'Comment {} by {}'.format(self.text, self.user)
     # def get_absolute_url(self):
     #     return reverse('recipe_detail', args=[str(self.recipe.id)])
-
-
-# model for saved recipes with heart icon
-class SavedRecipe(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
