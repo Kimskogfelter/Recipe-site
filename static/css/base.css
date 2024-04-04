@@ -238,14 +238,6 @@ footer {
 
 /* RECIPE_DETAIL.HTML PAGE */
 
-
-/* centers the recipe recipe heading, description, calories and food type text */
-.recipe-info {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-}
-
 .recipe-pic {
     border-radius: 25px;
     margin-bottom: 10px;
@@ -374,13 +366,6 @@ img.healthy-you-logo {
     .home-text-bg {
         height: 400px;
     }
-    
-  /* RECIPE_DETAIL.HTML PAGE */
-
-  /* make recipe image bigger */
-  .recipe-pic {
-    width: 570px;
-  }
 
 
   /* ABOUT.HTML PAGE */

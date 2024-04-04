@@ -1,15 +1,11 @@
 {% extends "base.html" %} {% load static %} {% load crispy_forms_tags %} {%
     block title %}Recipe Detail - {{recipe.title}} {% block content %}
-    <div class="container center-div">
+    <div class="container ">
       <div class="row recipe-info mt-3 p-1 justify-content-center">
 
-        <div class="recipe-img">
-          <img
-            src="{{ recipe.image.url }}"
-            alt="{{ recipe.image_description }}"
-            class="recipe-pic img-fluid w-100"
-          />
-        </div>
+        <div class="col-12 recipe-img">
+          <img src="{{ recipe.image.url }}" alt="{{ recipe.image_description }}" class="recipe-pic img-fluid w-100" />
+      </div>
         <div class="recipe-detail">
           <h1 class="text-center">{{ recipe.title }}</h1>
           <p class="text-center">
