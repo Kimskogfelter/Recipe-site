@@ -368,10 +368,34 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 9. Then press the ![picture of the deployment icon on github](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/deployment-icon.jpg) to go to the live website.
 
     This project was also deployed to Heroku.com. The following steps shows how you do it:
-1. 
+1. Start by creating a account on Herokus website
+2. Then log in to your account and create the app for your website
+3. When the app is created go to the settings tab
+4. Reveal the config vars and add a KEY of DISABLE_COLLECTSTATIC, and a VALUE of 1
+5. In your IDEs terminal pip install gunicorn~=20.1 
+6. In your IDE use this command: "pip freeze --local > requirements.txt" to update your requirements.txt file with the installed gunicorn
+7. Create a file in your root directory named Procfile, it needs to be the same directory as your requirements.txt
+8. In your procfile add this text: "web: gunicorn my_project.wsgi"
+9. Change "my_project" to the name of your own project
+10. Open your settings.py file and change your DEBUG settings to False. It should always be False when deploying your project to Heroku!
+11. In your settings.py under the ALLOWED_HOSTS add this text ",'.herokuapp'" 
+12. Now git add, commit and push all the changes to Github
+13. Return to your Heroku dashboard and go to the deploy tab
+14. Choose to connect your Heroku account to your Github account 
+15. When your Heroku account is connected to your Github account search for your project repo name and choose it
+16. Then scroll down to the bottom of the page and click on the "deploy branch" button to start a manual deployment
+17. When the deployment is done you'll see a "View" button at the bottom of the page
+18. Press that button to view your deployed app
 
     This project uses a database from ElephantSQL. The following steps shows how you create a database through ElephantSQL:
-1.  
+1. Log in to or create a new account at the ElephantSQL database webpage
+2. Click at "create new instance"
+3. Choose a name and plan for your database, name could be the same as your webpage to make things easy
+4. You can leave the tags field blank
+5. Click on the "select region" button and choose a region/data center close to you and then press the "review" button
+6. Check that all information is correct and press the "create instance" button
+7. Click on your newly made database
+8. 
 
 ### ISSUES
 
