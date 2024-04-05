@@ -204,7 +204,7 @@ footer {
 
 /* background image */
 .home-page-image {
-    background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("static/images/healthy-food.webp");
     background-size: cover;
     background-position: center;
     
