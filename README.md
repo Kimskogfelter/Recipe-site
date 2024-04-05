@@ -53,13 +53,11 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 - Shows all the latest recipes
 - The user can click on a specific recipe to see more detail about it
-- A heart symbol is on each recipe so a logged in user can choose to save the recipe to use it later on
-
   
 #### RECIPE DETAIL PAGE
 
 - The detail page for a recipe
-- Shows the name of the recipe, ingridients, steps on how to make the recipe, heart icon to be able to save the recipe
+- Shows the name of the recipe, ingridients, steps on how to make the recipe
 - The user can choose to edit or delete their own created recipes on this page but needs to be logged in for these functions to show.
 - The user can leave a comment on the recipe of they are logged in. Also edit/delete and old comment they have made
 
@@ -70,25 +68,25 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
   
 #### CONTACT PAGE
 
-- The user can choose to contact Healthy You if he/she got any questions with the form on this page.
+- The user can choose to contact Healthy You if he/she got any questions with the form on this page
 
 #### REGISTRATION PAGE
 
-- If the user want to join the website to be able to save and create own recipes its done in this page.
+- If the user want to join the website to be able to save and create own recipes its done in this page
 
 #### LOG IN PAGE
 
-- If the user want to log in to their own profile and see saved/own recipe its done on this page.
+- If the user want to log in to their own profile and see saved/own recipe its done on this page
 
 #### PROFILE PAGE
 
-- If the user want to see saved favourite recipes and the recipes they have created its done on this page.
-- The user needs to be logged in to used the feature. 
+- If the user want to see the recipes they have created its done on this page
+- The user needs to be logged in to used the feature
 
 #### ADD RECIPE PAGE
 
-- If the user want to add a new recipe its done on this page. 
-- The user needs to be logged in to used the feature.
+- If the user want to add a new recipe its done on this page
+- The user needs to be logged in to used the feature
 
 ### FEATURES
 
@@ -111,7 +109,8 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 - #### HERO IMAGE
 
-  - The hero image is one of the first things you notice when you enter the website. The goal is to make the users want to stay and want to search for delicious recipes to make on their own
+  - The hero image is one of the first things you notice when you enter the website. The goal is to make the users want to stay and want to search for delicious recipes to make on their own'
+  - It also contains some text which explains the purpose of the website and what the user can do
 
 ![picture of hero image](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/hero-image.jpg)
 
@@ -135,7 +134,6 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
   - If the user click on a recipe they are taken to the detail page of that recipe
   - It shows the ingredients, instructions, and any comments that made
-  - The user can press the heart icon to save a recipe to their own profile if they are logged in
   - The user can leave a comment if they are logged in
   - If any user have made a comment they are published at the bottom of the webpage, under the recipe
 
@@ -144,7 +142,6 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 #### ABOUT PAGE
 
 - The about page describes what the user can do on the Healthy You webpage and what its purpose
-- It also got a picture of a woman in the kitchen thats going to act as the owner of the webpage
 
 ![picture of the about page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/booking-page.jpg)
 
@@ -256,11 +253,8 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 ![Log in page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Log%20in%20page.webp)
 
-#### The profile and add recipe pages was made after I had finished the wireframes. They were made when I did the tutorial on Youtube for the webpage. Before that I had in mind to only have a saved recipes page that showed up when the user was logged in insted of a profile page. But quickly realized that I needed more subheadings on the saved recipes page and there for choose to create the profile page insted 
+#### The profile and add recipe pages was made after I had finished the wireframes. They were made when I did the tutorial on Youtube for the webpage. Before that I had in mind to only have a saved recipes page that showed up when the user was logged in insted of a profile page. But quickly realized that I needed more subheadings on the saved recipes page and there for choose to create the profile page insted. Due to not having enough time i choose to delete the save recipes part of the profile and just have the recipes the user has created. 
 
-#### SAVED RECIPES PAGE
-
-![Saved recipes page made in wireframes, that is unused due to changing it to a profile page insted](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20view%20saved%20recipes%20page.webp)
 
 ### TESTING
 
@@ -277,7 +271,7 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 #### BUGS
 
-- No bugs found
+- Found that the snacks anchor tag at the home page didnt show any snack recipes. Found that I had a "s" in the anchor at the end tag for snack so the search result was wrong. By removing the extra s at the end of "snacks" the link started to work.
 
 #### LIGHTHOUSE
 
