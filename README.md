@@ -282,75 +282,75 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 - #### Home Page - Mobile version
 
-![lighthouse result for home page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/Homepage-mobile.webp)
+![lighthouse result for home page, mobile version](static/images/lighthouse/home-page-lighthouse-mobile.jpg)
 
 - #### Home Page - Desktop version
 
-![lighthouse result for home page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/Homepage-desktop.webp)
+![lighthouse result for home page, desktop version](static/images/lighthouse/home-page-lighthouse.jpg)
 
 - #### Recipes Page - Mobile version
 
-![lighthouse result for recipes page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/Safarigallery-mobile.webp)
+![lighthouse result for recipes page, mobile version](static/images/lighthouse/recipes-page-mobile.jpg)
 
 - #### Recipes Page - Desktop version
 
-![lighthouse result for recipes page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/Safarigallery-desktop.webp)
+![lighthouse result for recipes page, desktop version](static/images/lighthouse/recipes-page.jpg)
 
 - #### Recipe Detail Page - Mobile version
 
-![lighthouse result for recipe detail page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/bookingpage-mobile.webp)
+![lighthouse result for recipe detail page, mobile version](static/images/lighthouse/recipe-detail-page-mobile.jpg)
 
 - #### Recipe Detail Page - Desktop version
 
-![lighthouse result for recipe detail page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/bookingpage-desktop.webp)
+![lighthouse result for recipe detail page, desktop version](static/images/lighthouse/recipe-detail-page.jpg)
 
 - #### About Page - Mobile version
 
-![lighthouse result for about page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-mobile.webp)
+![lighthouse result for about page, mobile version](static/images/lighthouse/about-page-mobile.jpg)
 
 - #### About Page - Desktop version
 
-![lighthouse result for about page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-desktop.webp)
+![lighthouse result for about page, desktop version](static/images/lighthouse/about-page.jpg)
 
 - #### Contact Page - Mobile version
 
-![lighthouse result for contact page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/bookingpage-thankyou-page-mobile.webp)
+![lighthouse result for contact page, mobile version](static/images/lighthouse/contact-page-mobile.jpg)
 
 - #### Contact Page - Desktop version
 
-![lighthouse result for contact page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/bookingpage-thankyou-page-deskttop.webp)
+![lighthouse result for contact page, desktop version](static/images/lighthouse/contact-page.jpg)
 
 - #### Register page - Mobile version
 
-![lighthouse result for register page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-mobile.webp)
+![lighthouse result for register page, mobile version](static/images/lighthouse/register-page-mobile.jpg)
 
 - #### Register page - Desktop version
 
-![lighthouse result for register page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-desktop.webp)
+![lighthouse result for register page, desktop version](static/images/lighthouse/register-page.jpg)
 
 - #### Log in page - Mobile version
 
-![lighthouse result for log in page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-mobile.webp)
+![lighthouse result for log in page, mobile version](static/images/lighthouse/login-page-mobile.jpg)
 
 - #### Log in page - Desktop version
 
-![lighthouse result for log in page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-desktop.webp)
+![lighthouse result for log in page, desktop version](static/images/lighthouse/login-page.jpg)
 
 - #### Profile page - Mobile version
 
-![lighthouse result for profile page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-mobile.webp)
+![lighthouse result for profile page, mobile version](static/images/lighthouse/profile-page-mobile.jpg)
 
 - #### Profile page - Desktop version
 
-![lighthouse result for profile page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-desktop.webp)
+![lighthouse result for profile page, desktop version](static/images/lighthouse/profile-page.jpg)
 
 - #### Add recipe page - Mobile version
 
-![lighthouse result for add recipe page, mobile version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-mobile.webp)
+![lighthouse result for add recipe page, mobile version](static/images/lighthouse/add-recipe-mobile.jpg)
 
 - #### Add recipe page - Desktop version
 
-![lighthouse result for add recipe page, desktop version](https://raw.githubusercontent.com/Kimskogfelter/Safari-Retreat/main/assets/images/lighthouse/contactus-thankyou-page-desktop.webp)
+![lighthouse result for add recipe page, desktop version](static/images/lighthouse/add-recipe.jpg)
 
 ### DEPLOYMENT
 
