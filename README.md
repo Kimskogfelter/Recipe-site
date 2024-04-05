@@ -99,11 +99,11 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 - The logo in the top left corner of the navigation bar is also a link to the home page.
 - The user can see both the logo and navigation menu easy because of the color scheme of the offwhite background with the green text
 
-![picture of the header and navigation bar for screens bigger then 1024px](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/header-and-navbar.jpg)
+![picture of the header and navigation bar for screens bigger then 1024px](static/images/readme/header-nav-searchbar.jpg)
 
 - For mobile phones the navigation menu turns into a hamburger bar icon which they can click on to activate the navigation menu
 
-![picture of the header and navigation bar for mobile phones](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/header-and-navbar-mobile.jpg)
+![picture of the header and navigation bar for mobile phones](static/images/readme/header-nav-searchbar-mobiles.jpg)
 
 #### HOME PAGE
 
@@ -112,7 +112,7 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
   - The hero image is one of the first things you notice when you enter the website. The goal is to make the users want to stay and want to search for delicious recipes to make on their own'
   - It also contains some text which explains the purpose of the website and what the user can do
 
-![picture of hero image](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/hero-image.jpg)
+![picture of hero image](static/images/readme/hero-image.jpg)
 
 - #### CLICKABLE LINKS
 
@@ -120,7 +120,7 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
   - Each link goes to a different type of food recipes
   - This is to make users want to explore more and easy be able to that directly from the home page 
 
-![picture of the clickable links under the hero image](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/retreat-section.jpg)
+![picture of the clickable links under the hero image](static/images/readme/clickable-links.jpg)
 
 #### RECIPES PAGE
 
@@ -128,7 +128,7 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 - The user can press the heart icon to save a recipe to their own profile if they are logged in
 
 
-![picture of recipes page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/safari-gallery-page.jpg)
+![picture of recipes page](static/images/readme/recipes-page.jpg)
 
 - #### RECIPE DETAIL PAGE
 
@@ -137,45 +137,46 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
   - The user can leave a comment if they are logged in
   - If any user have made a comment they are published at the bottom of the webpage, under the recipe
 
-![picture of recipe detail page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/safari-gallery-page.jpg)
+![picture of the top of the recipe detail page](static/images/readme/recipe-detail-page-top.jpg)
+![picture of the bottom of the recipe detail page](static/images/readme/recipe-detail-page-bottom.jpg)
 
 #### ABOUT PAGE
 
 - The about page describes what the user can do on the Healthy You webpage and what its purpose
 
-![picture of the about page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/booking-page.jpg)
+![picture of the about page](static/images/readme/about-page.jpg)
 
 #### CONTACT PAGE
 
 - If users needs to contact Healthy You for some reason they can go to the contact page and fill in the form
 
-![picture of the contact page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/contact-us.jpg)
+![picture of the contact page](static/images/readme/contact-page.jpg)
 
 #### REGISTER PAGE
 
 - If the user want to create a user to be able to create and save/comment on recipe its done on this page
 
-![picture of the register page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/contact-us-thankyou-page.jpg)
+![picture of the register page](static/images/readme/register-page.jpg)
 
 #### LOG IN PAGE
 
 - If the user want to log in to be able to see created or saved recipes and edit their own recipes or comments its done on this page
 
-![picture of the log in page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/contact-us-thankyou-page.jpg)
+![picture of the log in page](static/images/readme/login-page.jpg)
 
 #### PROFILE PAGE
 
 - If the user want to see their own recipes or recipes that they have liked its done on this page
 - The user needs to be logged in for this page to show
 
-![picture of the profile page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/contact-us-thankyou-page.jpg)
+![picture of the profile page](static/images/readme/profile-page.jpg)
 
 #### ADD RECIPE PAGE
 
 - If the user want to add their own recipe to the Healthy You webpage its done on this page
 - The user needs to be logged in for this page to show
 
-![picture of the add recipe page](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/contact-us-thankyou-page.jpg)
+![picture of the add recipe page](static/images/readme/add-recipe-page.jpg)
 
 ### COLOR SCHEME
 
@@ -218,18 +219,20 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 #### RECIPES PAGE
 
+- Removed the rating function due to not having enough time to finish that part
+
 ![Recipes page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Recipes%20main%20page.webp)
 
 #### RECIPES DETAIL PAGE
 
-- Added a heart icon so the user can save favourite recipes
 - Added a comment function so a logged in user can comment on the recipe
+- Removed the rating function due to not having enough time to finish that part
 
 ![Recipes detail page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Recipe%20page.webp)
 
 #### ABOUT PAGE
 
-- Decided to add text about the webpage in the image to the left and add a little image and little text to the right to make it look more appealing
+- Decided to make the image to the left take up the whole height of the webpage to make it look more appealing
 
 ![About page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20About%20page.webp)
 
