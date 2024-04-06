@@ -263,13 +263,229 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 
 ---
 
-- I tested the website in Chrome, Firefox and Edge browser to see that all pages loaded and that every link, button, form, image and navigation menu was working
+- I tested the website in Chrome, Firefox and Edge browser to see that all pages loaded and that every link, button, form, images and navigation menu was working
 - The site is also responsive which I tested in google chromes devtools by selecting different screensizes and test each function
 - I tested that all text is easy to read and to understand
 - The HTML and CSS got valified through both CSS and HTML validators
 - The Python is valified through PEP8
-- I tested all the different functions, buttons etc on the website: 
-  - 
+
+
+#### MANUAL TESTING 
+
+I also did manual testings on all website pages to ensure that everything was working as expected:
+
+  - #### HOME PAGE 
+  Description:
+  Make sure all the links to the 5 different recipe types are working
+
+  Steps:
+
+  1. Go to the home page
+  2. Click on each link and see if it takes you to the correct type of recipe
+  
+  Expected:
+
+  The user should be sent to a recipe containing meat when clicking on the meat link
+
+  Actual:
+
+  I was sent to the recipes page which showed me a recipe with meat in it
+
+- #### HEADER AND NAVIGATION MENU
+
+ Description:
+  Make sure all the navigation links and the search bar is working
+
+  Steps:
+
+  1. Click on each navigation link to see that i'm taken to the correct page
+  2. Click on the logo at the left corner of the header to see that i'm taken to the home page
+  3. Write something in the search bar, for example "meat" to see that im taken to a recipe with meat in it
+  
+  Expected:
+
+  The user should be taken to the correct page when clicking on a navigation link
+  The user should be taken to the correct recipe when using the searchbar, and if no recipes are found the recipes page is showed empty
+
+  Actual:
+
+  I was sent to all correct pages through the navigation links and the searchbar showed me the correct recipes i was searching for
+
+  - #### RECIPES PAGE 
+
+  Description:
+  Make sure all the recipes are showed and that the user is taken to the correct recipe when clicking on it
+
+  Steps:
+
+  1. Click on the recipes link in the navigation menu
+  2. See that the recipes are showing and then click on one recipe
+  3. See that the user is taken to the correct recipe that is clicked on
+  
+  Expected:
+
+  The user should see all the different recipes when first visiting the recipes page
+  The user should be taken to the correct recipe when clicking on one of the recipes
+
+  Actual:
+
+  When I clicked on the recipes link in the navigation menu I was taken to the recipes page. It showed me all the different recipes. 
+  I then clicked on all the recipes to see that I was taken to the correct recipe, which I was
+
+- #### RECIPE DETAIL PAGE 
+
+  Description:
+  Make sure that the user is taken to the correct recipe detail page, showing the correct information, ingredients, instructions and made comments. 
+  If the user has made that recipe / and/ or comment they should  also be able to edit/delete that recipe/comment.
+  Make sure that a logged in user can make a comment 
+
+  Steps:
+
+  1. Click on one recipe on the recipes page
+  2. See that the correct recipe is showing
+  3. Check that all information, ingredients, instructions and comments are showing
+  4. Check that the user can edit/delete that recipe if they are the creator of that recipe
+  5. Check that the user can edit/delete a made comment if they are the creator of that comment
+  6. Check that I can make a comment on a recipe if i'm logged in
+  
+  Expected:
+
+  The user should see the correct recipe with all the information about it
+  The user should be able to edit/delete the recipe/comment if they are the creator
+  The user can make a comment if they are logged in at the website. If not logged in a message should tell them to log in to be able to create a comment
+
+  Actual:
+
+  When I clicked on one recipe i was taken to that specific recipe. All the information, ingredients and instructions seemed correct due to the title of the recipe.
+  I could also edit/delete both the recipe and comments I had made if I were the creator of those. I could write and post a comment as I was logged in. When I wasnt logged in a got a message under the "Add a comment" title that telled me I had to log in to be able to use that feature
+
+  - #### ABOUT PAGE 
+
+  Description:
+  Make sure that the about page is showing the correct image and text 
+
+  Steps:
+
+  1. Click on about link in the navigation menu
+  2. See that the user is taken to the about page 
+  3. See that the correct text is showing that tells the user about this webpage
+  
+  Expected:
+
+  The user should be taken to the about page displaying a text describing the purpose about this webpage
+
+  Actual:
+
+  When I clicked on about pages navigation link in the navigation menu I was taken to the correct page, showing me the text describing what this webpage purpose is
+
+
+- #### CONTACT PAGE 
+
+  Description:
+  Make sure that all the different fields in the contact form is working and that the user get a message when the form is successfully sent
+
+  Steps:
+
+  1. Write nothing in each field in the contact form tells you to fill that specific field
+  2. Write a number in the first name/ last name fields too see if the form tells you that is wrong
+  3. Write a name only in the email field to see that the form tells you that you need a email adress
+  4. Write nothing on the message field to see that the form tells you that you need to fill this in
+
+  Expected:
+
+  The user should be informed to fill in each field with the correct information before being able to submit the form
+
+  Actual:
+
+  When I filled in each field correct the form was sent and I got a message telling me "Thank you for your message. We will contact you as soon as possible."
+
+- #### REGISTER PAGE 
+
+  Description:
+  Make sure the registration is working and that the user can create their own user at the website
+
+  Steps:
+
+  1. Fill in the email field with a name only and see that the form is telling me to use email adress
+  2. Fill in the username and then choose a password the is short and see that its telling me to choose another password
+  3. Fill in the username and then choose a password the is only numbers and see that its telling me to choose another password
+  4. Fill in the username and then choose a password and write it in a different way in the second field to ensure that the form is telling you that the password needs to be the same
+  5. Fill in each field correct and see that the user is created successfully
+  6. Check that the link to the lon in page under the "Sign up" title is working and is taking the user to the log in page
+
+  Expected:
+
+  The user should be informed to fill in each field with the correct information before being able to create a user
+  The user should be taken to the log in page when clicking on the log in link under the Sign up title
+
+  Actual:
+
+  When I filled in each field correct I was able to create my own user. I was also taken to the log in page when I clicked on the log in link in the text under the "Sign up" title
+
+- #### LOG IN PAGE 
+
+  Description:
+  Make sure the user is able to log in with a created user
+
+  Steps:
+
+  1. Fill in each field with the wrong username and password to see that the user isnt able to log in
+  2. Fill in each field with a correct username and password to see tha the user in being able to log in
+
+  Expected:
+
+  The user should be informed to fill in each field with the correct information before being able to log in
+  The user should be able to log in and see their own profile page, and the Add recipes page if they log in with the correct username and password
+
+  Actual:
+
+  When I filled in each field correct I could see my own profile page and add recipe page at the navigation menu
+
+- #### PROFILE PAGE 
+
+  Description:
+  Make sure the user is able to see their own profile page when logged in to the website, and see recipes they have created on their profile page
+
+  Steps:
+
+  1. Log in to the website and see that the profile link is showing in the navigation menu
+  2. Click on the profile page and see that the correct profile page is showing
+  3. If the user has created recipes those should be showed on this page
+  4. The user should also be able to click on one recipe and be taken to that specific recipe
+
+  Expected:
+
+  The user should be able to see a profile page link in the navigation menu and when clicked on being taken to their own profile page
+  The user should be able to see all the recipes they have created IF they have created any
+  The user should be taken to the correct recipe detail page if they click on a specific recipe they have created that is showing on their profile page
+
+  Actual:
+
+  When I logged in and clicked on the profile page I was taken to my own profile page. I Could see all the different recipes I had created.
+  I then tried to click on a specific recipe and was taken to the correct one
+
+
+
+- #### ADD RECIPE PAGE 
+
+  Description:
+  Make sure that the user can add their own recipe when logged in to the website, and that the recipe is showing on the recipes page
+
+  Steps:
+
+  1. Log in to the website and see that the add recipe link is in the navigation menu
+  2. Click on the Add Recipe link too see that the correct page is loaded
+  3. Fill in the information and image that is needed for the recipe
+  4. Click on the "Create recipe" button at the bottom of the page to see that the user is taken to the recipes page and that the new recipe is added
+
+  Expected:
+
+  The user should be able to see a add recipe link in the navigation menu when logged in. The user should be able to create a new recipe that is added to the recipes page
+
+  Actual:
+
+  When I logged in and clicked on the Add Recipe link in the navigation menu i was taken to the correct page. I then created a new recipe and pressed the "create recipe" button.
+  I was then taken to the recipes page and my own new recipe was showed on the page
 
 #### BUGS
 
