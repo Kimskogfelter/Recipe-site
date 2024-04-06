@@ -395,7 +395,30 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 5. Click on the "select region" button and choose a region/data center close to you and then press the "review" button
 6. Check that all information is correct and press the "create instance" button
 7. Click on your newly made database
-8. 
+8. Click on the STATS menu and check that the PostgresSQL version is higher then 12 (if its not higher then 12 you need to go back to step 1 and create a new instance and choose a different data center. If you are in Europe choose one thats in Europe)
+9. When your PostgresSQL version is  12 or higher go to the DETAILS menu and copy the URL
+10. Go back to your IDE and create a new file named "env.py" in your root directory, the same as your Procfile 
+11. Open the ".gitignore" file and add the "env.py" to that
+12. Open your "env.py" file and add this text: "import os
+os.environ.setdefault('DATABASE_URL', '<your-database-url>')"
+13. Change the text "<your-database-url>" to your own data base URL you copied from ElephantSQL
+14. Pip install dj-database-url~=0.5 and psycopg2~=2.9, these are required to be able to connect to your PostgresSQL database
+15. Pip freeze your requirements.txt file
+16. Open your "settings.py" and add this at the top of it "import os
+import dj_database_url
+if os.path.isfile('env.py'):
+import env"
+17. Still in your "settings.py" file, find the local sqlite3 database that Django provides and comment that one out so you dont use it
+18. Then add this text under the local database you just commented out "DATABASES = {
+ 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+ }" 
+ 19. Now that your project is connected to the database you need to use the migrate command in your terminal, copy this text to your terminal and press enter "python manage.py migrate"
+ 20. In your "settings.py" file change DEBUG to False! IMPORTANT 
+ 21. Now git add, commit and push all the changes to Github
+ 22. Go to your Heroku dashboard and go to the DEPLOY tab and do a manual deployment
+ 23. When the deployment is done go to the settings tab and reveal your config vars
+ 24. Add a new confiv var with the KEY "DATABASE_URL" and the VALUE is your ElephantSQL URL
+ 25. Now your deployed app should be connected to your new PostgresSQL database
 
 ### ISSUES
 
