@@ -268,8 +268,7 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 - I tested that all text is easy to read and to understand
 - The HTML and CSS got valified through both CSS and HTML validators
 - The Python is valified through PEP8
-- The Javascript is valified through ...
-- I tested all the code through the whole webpage though these stages: 
+- I tested all the different functions, buttons etc on the website: 
   - 
 
 #### BUGS
