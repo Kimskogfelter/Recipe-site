@@ -193,7 +193,6 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 ---
 
 - [https://validator.w3.org/nu/] to validate html code
-  All the html templates got errors due to the django languages that is used in the templates
 - [https://jigsaw.w3.org/css-validator/] to validate css code
 - Python is valified through CI Python Linter
 - used [https://favicon.io/favicon-converter/] to generate the favicon
@@ -266,8 +265,15 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 - I tested the website in Chrome, Firefox and Edge browser to see that all pages loaded and that every link, button, form, images and navigation menu was working
 - The site is also responsive which I tested in google chromes devtools by selecting different screensizes and test each function
 - I tested that all text is easy to read and to understand
-- The HTML and CSS got valified through both CSS and HTML validators
-- The Python is valified through PEP8
+- The CSS code got valified through a CSS validator
+- The HTML code got valified through a HTML validator. 
+  I viewed each pages source code on the live website and copy and pasted that html code to the 
+  html validator, so I wouldnt get any django errors. I got some other errors from the live page html code 
+  which I couldnt see in the html template code in the IDE:
+  - #### RECIPE DETAIL PAGE
+  Said that I had stray <p>, <tr>, <td> and <th> tags, which I couldnt find in the html code in the IDE.
+  All the other html pages was OK. 
+- The Python is valified through CI Python Linter
 
 
 #### MANUAL TESTING 
