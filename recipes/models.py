@@ -52,13 +52,22 @@ class RecipeModel(models.Model):
         blank=False,
         null=False,
     )
-    image_description = models.CharField(max_length=150, null=False, blank=False)
-    meal_type = models.CharField(max_length=45, choices=MEAL_TYPE, default="lunch")
-    food_type = models.CharField(max_length=45, choices=FOOD_TYPE, default="sandwich")
+    image_description = models.CharField(max_length=150,
+                                         null=False,
+                                         blank=False)
+    meal_type = models.CharField(max_length=45,
+                                 choices=MEAL_TYPE,
+                                 default="lunch")
+    food_type = models.CharField(max_length=45,
+                                 choices=FOOD_TYPE,
+                                 default="sandwich")
     calories = models.IntegerField()
-    posted_date = models.DateTimeField(auto_now=True) # posted date for the recipe
+    # posted date for the recipe
+    posted_date = models.DateTimeField(auto_now=True)
+
     class Meta:
         ordering = ["-posted_date"]
+
     def __str__(self):
         return str(self.title)
 
@@ -69,9 +78,11 @@ class CommentRecipeModel(models.Model):
     A model for the comment section in the recipe detail view
     """
     recipe = models.ForeignKey(RecipeModel, on_delete=models.CASCADE)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL,
+                             on_delete=models.CASCADE)
     text = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
+
     def __str__(self):
         return 'Comment {} by {}'.format(self.text, self.user)
     # def get_absolute_url(self):

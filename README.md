@@ -193,10 +193,10 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 ---
 
 - [https://validator.w3.org/nu/] to validate html code
+  All the html templates got errors due to the django languages that is used in the templates
 - [https://jigsaw.w3.org/css-validator/] to validate css code
-- Python is valified throught PEP8 
+- Python is valified through CI Python Linter
 - used [https://favicon.io/favicon-converter/] to generate the favicon
-- [https://www.remove.bg/] to remove background from favicon
 - Python
 - Django
 - Bootstrap

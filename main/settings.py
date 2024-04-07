@@ -31,7 +31,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["8000-kimskogfelte-recipesite-kj2l9ydts1i.ws-eu110.gitpod.io", ".herokuapp.com", "healthy-you-recipe-site-0b4400e888c9.herokuapp.com/"]
+ALLOWED_HOSTS = ["8000-kimskogfelte-recipesite-kj2l9ydts1i.ws-eu110.gitpod.io",
+                 ".herokuapp.com",
+                 "healthy-you-recipe-site-0b4400e888c9.herokuapp.com/"]
 
 
 # Application definition
@@ -73,7 +75,7 @@ DJRICHTEXTFIELD_CONFIG = {
     'init_template': 'djrichtextfield/init/ckeditor.js',
     'settings': {
         'toolbar': [
-            ['Format', 'Bold', 'Italic', 'Underline',],
+            ['Format', 'Bold', 'Italic', 'Underline'],
             ['BulletedList', 'NumberedList'], ['Redo', 'Undo'],
             ['Maximize']
         ],
@@ -123,28 +125,16 @@ TEMPLATES = [
 ]
 
 AUTHENTICATION_BACKENDS = [
-   
+
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by email
     'allauth.account.auth_backends.AuthenticationBackend',
-    
+
 ]
 
 WSGI_APPLICATION = 'main.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
-# DATABASES = {
-  # 'default': {
-   # 'ENGINE': 'django.db.backends.sqlite3',
-    # 'NAME': BASE_DIR / 'db.sqlite3',
-  # }
- # }
-
 
 DATABASES = {
  'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
@@ -155,16 +145,20 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_'
+        'validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_'
+        'validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_'
+        'validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_'
+        'validation.NumericPasswordValidator',
     },
 ]
 
@@ -216,4 +210,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-kimskogfelte-recipesite-kj2l9ydts1i.ws-eu110.gitpod.io',  'https://*.herokuapp.com', 'https://healthy-you-recipe-site-0b4400e888c9.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS = ['https://8000-kimskogfelte-recipesite'
+                        '-kj2l9ydts1i.ws-eu110.gitpod.io',
+                        'https://*.herokuapp.com',
+                        'https://healthy-you-recipe-'
+                        'site-0b4400e888c9.herokuapp.com/']

@@ -25,7 +25,7 @@ class RecipesView(ListView):
     def get_queryset(self, **kwargs):
         search_query = self.request.GET.get("searchquery")
         if search_query:
-           recipes = self.model.objects.filter(
+            recipes = self.model.objects.filter(
                 Q(title__icontains=search_query) |
                 Q(description__icontains=search_query) |
                 Q(instructions__icontains=search_query) |
@@ -72,6 +72,7 @@ class AddRecipeView(LoginRequiredMixin, CreateView):
     model = RecipeModel
     form_class = RecipeForm
     success_url = "/recipes/"
+
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super(AddRecipeView, self).form_valid(form)
@@ -83,6 +84,7 @@ class EditRecipeView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = RecipeModel
     form_class = RecipeForm
     success_url = "/recipes/"
+
     def test_func(self):
         return self.request.user == self.get_object().user
 
@@ -92,6 +94,7 @@ class DeleteRecipeView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = RecipeModel
     success_url = "/recipes/"
     template_name = 'recipes/recipe_confirm_delete.html'
+
     def test_func(self):
         return self.request.user == self.get_object().user
 
@@ -102,6 +105,7 @@ class EditCommentView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = CommentRecipeModel
     form_class = CommentRecipeForm
     success_url = "/recipes/"
+
     def test_func(self):
         return self.request.user == self.get_object().user
 
@@ -111,5 +115,6 @@ class DeleteCommentView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     template_name = "recipes/comment_confirm_delete.html"
     model = CommentRecipeModel
     success_url = "/recipes/"
+
     def test_func(self):
         return self.request.user == self.get_object().user

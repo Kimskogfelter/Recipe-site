@@ -39,8 +39,10 @@ class RecipeForm(forms.ModelForm):
 class CommentRecipeForm(forms.ModelForm):
     class Meta:
         model = CommentRecipeModel
-        fields =['text']
+        fields = ['text']
+
     def __init__(self, *args, **kwargs):
         super(CommentRecipeForm, self).__init__(*args, **kwargs)
         self.fields['text'].label = False
-        self.fields['text'].widget.attrs.update({'style': 'width: 95%;'}) # makes the width of the form smaller
+        # makes the width of the form smaller
+        self.fields['text'].widget.attrs.update({'style': 'width: 95%;'})

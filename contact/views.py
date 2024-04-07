@@ -9,11 +9,11 @@ from .forms import ContactUsForm
 
 # Create your views here.
 
-#view for contact form
+# view for contact form
 class ContactUsView(FormView):
     template_name = 'contact/contact.html'
     form_class = ContactUsForm
-    success_url = reverse_lazy('successform')  
+    success_url = reverse_lazy('successform')
 
     def form_valid(self, form):
         firstname = form.cleaned_data.get("firstname")
