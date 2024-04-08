@@ -9,11 +9,11 @@ from django.dispatch import receiver
 from django_resized import ResizedImageField
 
 
-class Profile(models.Model):
-    """Profile model"""
+class ProfileModel(models.Model):
+    """Model for profiles"""
 
     user = models.ForeignKey(User,
-    related_name="profile", on_delete=models.CASCADE)
+                             related_name="profile", on_delete=models.CASCADE)
     image = ResizedImageField(
         size=[300, 300],
         quality=75,

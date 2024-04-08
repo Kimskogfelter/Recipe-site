@@ -37,6 +37,16 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
   
 #### All users want to be able to scroll through the website on their phones without any disturbing events and easy find what they are looking for
 
+### AGILE METHODS
+
+---
+
+#### KANBAN 
+
+I used github projects to make my own kanban board to be able to keep track on all different steps I needed to take during this project
+
+![picture from my github pages where i used github projects to make my own kanban board](static/images/readme/github-kanban-board.jpg)
+
 ### STRUCTURE
 
 ---
@@ -89,6 +99,11 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 - The user needs to be logged in to used the feature
 
 ### FEATURES
+
+#### FUTURE FEATURES
+
+My plan in the future is to add the star rating for each recipe so the users can rate the recipes after how good they were. 
+Also adding the heart symbol to make each user able to save a recipe they really like to their own profile page. 
 
 ---
 
@@ -266,14 +281,20 @@ It's a website for people who are looking for healthy recipes. Maybe you just wa
 - The site is also responsive which I tested in google chromes devtools by selecting different screensizes and test each function
 - I tested that all text is easy to read and to understand
 - The CSS code got valified through a CSS validator
-- The HTML code got valified through a HTML validator. 
+
+  ![Picture of the results of the CSS validator](static/images/readme/css-validator.jpg)
+- The HTML code got valified through a HTML validator
   I viewed each pages source code on the live website and copy and pasted that html code to the 
   html validator, so I wouldnt get any django errors. I got some other errors from the live page html code 
   which I couldnt see in the html template code in the IDE:
   - #### RECIPE DETAIL PAGE
-  Said that I had stray <p>, <tr>, <td> and <th> tags, which I couldnt find in the html code in the IDE.
+  Said that I had stray < p >, < tr >, < td > and < th > tags, which I couldnt find in the html code in the IDE.
   All the other html pages was OK. 
-- The Python is valified through CI Python Linter
+
+  ![Picture of the results of the html validator](static/images/readme/html-validator.jpg)
+- All the Python code is valified through CI Python Linter
+
+  ![Picture of the results of the python validator](static/images/readme/python-linter-results.jpg)
 
 
 #### MANUAL TESTING 
@@ -643,7 +664,11 @@ import env"
 
 ### ISSUES
 
-- 
+- I noticed that the divs containing each recipe on the recipes page are different sizes on the smaller screens. 
+When the recipe divs are 2 or 1 per row they get different sizes. I have tried to change the bootstrap classes to make that
+dissapear so that all the recipe divs are the same size, but without any luck. 
+- This project have been a real struggle for me. To understand Django took a long time and it was when I had 2 weeks left to finish this I started
+to understand Django a little bit. Hopefully I have changed enought to get a pass and I will continue to study to learn Django even more. 
 
 ### CREDITS
 
@@ -667,6 +692,7 @@ import env"
   - smoothie with berries: https://www.pexels.com/sv-se/foto/mat-halsosam-tra-sommar-434295/
   - banana waffle: https://www.pexels.com/sv-se/foto/mat-vindruvor-banan-skivad-8165393/
   - chocolate cake: https://www.pexels.com/sv-se/foto/47013/
+  - healthy cake: https://www.freepik.com/premium-photo/close-up-dessert-plate-table_114723021.htm#fromView=search&page=1&position=38&uuid=500dccdf-e9a5-48c1-861f-8161ec872999
 
 #### CODE
 
@@ -674,4 +700,4 @@ import env"
 - I used the tutorial on this page to make the contact form work https://learndjango.com/tutorials/django-email-contact-form-tutorial
 - I used the tutorial on this page for adding comments to a blog post to help med add the comments form to the recipe detail page https://www.geeksforgeeks.org/django-project-to-create-a-comments-system/ and the old "I Think Therefore I Blog  Authorisation, Commenting and Likes  Commenting - part 2" in the LMS. 
 
-#### All the thanks to the lovely students on slack for helping out when needed and my mentor Ronan for being so supportive and helpfull
+#### All the thanks to the lovely students on slack. Specially the students in the community-sweden group for helping out when needed and my mentor Ronan for being so supportive and helpfull

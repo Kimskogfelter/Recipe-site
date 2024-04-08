@@ -7,19 +7,21 @@
 <h1 class="text-center d-block heading-text healthy-food-background pb-3 pt-3">
     Latest Recipes
 </h1>
+<!-- container for all the recipes -->
 <div class="container">
     <div class="row justify-content-center">
         {% for recipe in recipes %} 
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 center-div">
+        <!-- each recipe container -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 center-div">
             <a href="{% url 'recipe_detail' recipe.id %}" class="recipes" aria-label="Click to view {{recipe.title}}">
                 <div class="card m-3">
                     <div class="recipes-image-container">
                         <img src="{{recipe.image.url}}" class="card-img-top recipe-image" alt="{{recipe.image_description}}">
                     </div>
                     <div class="card-body">
-                        <!--recipe title-->
+                        <!--title of recipe-->
                         <h2 class="card-title main-text">{{recipe.title}}</h2>
-                        <!--recipe description-->
+                        <!--title of description-->
                         <p class="card-text main-text">{{recipe.description|truncatechars:100}}</p>
                     </div>
                 </div>

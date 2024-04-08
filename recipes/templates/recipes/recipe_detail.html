@@ -2,16 +2,19 @@
     block title %}Recipe Detail - {{recipe.title}} {% block content %}
     <div class="container ">
       <div class="row recipe-info mt-3 p-1 justify-content-center">
-
+        <!-- recipe image -->
         <div class="col-12 recipe-img">
           <img src="{{ recipe.image.url }}" alt="{{ recipe.image_description }}" class="recipe-pic img-fluid w-100" />
       </div>
         <div class="recipe-detail">
+          <!-- recipe title -->
           <h1 class="text-center">{{ recipe.title }}</h1>
+          <!-- recipe user and date -->
           <p class="text-center">
             Posted by {{recipe.user}} on {{recipe.posted_date}}
           </p>
           <hr>
+          <!-- recipe description -->
           <p class="text-center">{{recipe.description}}</p>
           <p class="text-center"><strong>Calories: </strong> {{ recipe.calories }}</p>
           <p class="text-center"><strong>Food Type: </strong> {{ recipe.food_type|title }}</p>
@@ -20,6 +23,7 @@
     </div>
       <div class="recipe-container">
         <div class="d-md-flex">
+          <!-- recipe ingredients and instructions -->
         <div class="ingredients p-3 col-md-6">
           <h2>Ingredients</h2>
           <p>{{ recipe.ingredients|safe }}</p>
@@ -62,6 +66,8 @@
                       Posted by {{ comment.user }} on {{ comment.created_at }}
                     </p>
                     {% if request.user == comment.user %}
+        <!-- checks if the requested user is the logged in user -->
+        <!-- the user can then choose to edit or delete their own comments -->           
         <div class="text-center">
           <a
             href="{% url 'edit_comment' comment.id %}"
