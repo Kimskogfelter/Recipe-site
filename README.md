@@ -668,7 +668,7 @@ import env"
 When the recipe divs are 2 or 1 per row they get different sizes. I have tried to change the bootstrap classes to make that
 dissapear so that all the recipe divs are the same size, but without any luck. 
 - This project have been a real struggle for me. To understand Django took a long time and it was when I had 2 weeks left to finish this I started
-to understand Django a little bit. Hopefully I have changed enought to get a pass and I will continue to study to learn Django even more. 
+to understand Django a little bit. Hopefully I have written enought own code to get a pass and I will continue to study to learn Django even more. 
 
 ### CREDITS
 
