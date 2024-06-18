@@ -600,19 +600,8 @@ was then able to create a user.
 ### DEPLOYMENT
 
 ---
-    This project was deployed to Github.com. The following steps shows how you do it:
 
-1. Log in to your Github.
-2. Go to the Recipe Site repository in Github: [https://github.com/Kimskogfelter/Recipe-site]
-3. Select Settings in the repository navigation menu at the top.
-4. Select Pages at the left handside of the website.
-5. Choose: Deploy from a branch as Source.
-6. Choose: Main as branch and /root as folder and press save.
-7. Wait a few minutes and press the Code menu to the top left.
-8. At the right handside go to Deployment.
-9. Then press the ![picture of the deployment icon on github](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/deployment-icon.jpg) to go to the live website.
-
-    This project was also deployed to Heroku.com. The following steps shows how you do it:
+    This project was deployed to Heroku.com. The following steps shows how you do it:
 1. Start by creating a account on Herokus website
 2. Then log in to your account and create the app for your website
 3. When the app is created go to the settings tab
@@ -664,6 +653,38 @@ import env"
  23. When the deployment is done go to the settings tab and reveal your config vars
  24. Add a new confiv var with the KEY "DATABASE_URL" and the VALUE is your ElephantSQL URL
  25. Now your deployed app should be connected to your new PostgresSQL database
+
+
+ ### CLONE REPOSITORYS LOCALLY
+
+Navigate to the repository in Github you want to use:
+
+1. Click on the green code drop down button
+2. Click on HTTPS and copy that URL 
+3. Open the IDE you want to use (you must install git for the next stepes)
+4. Type "git clone copied-git-url" into the terminal of the IDE
+
+The project have now been cloned to your local IDE and is ready to use.
+
+Install Dependencies:
+
+```npm install```
+
+Run Application:
+
+```npm start```
+
+
+### FORKING
+
+Forks are often used to either make changes to someones existing project or to use it as a starting point for your own project.
+
+1. Go to the repository in Github you want to fork.
+
+2. On the top right of the page under the header, click the fork button.
+
+3. This will create a clone of that repository in your own Github repositories.
+
 
 ### ISSUES
 
