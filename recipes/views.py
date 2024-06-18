@@ -14,6 +14,7 @@ from .models import RecipeModel, CommentRecipeModel
 from .forms import RecipeForm, CommentRecipeForm
 from django.http import HttpResponseRedirect, JsonResponse
 from django.urls import reverse
+from django.contrib import messages
 
 
 class RecipesView(ListView):
@@ -75,6 +76,7 @@ class AddRecipeView(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.user = self.request.user
+        messages.success(self.request, 'The recipe has been added to the website.')
         return super(AddRecipeView, self).form_valid(form)
 
 
@@ -89,6 +91,12 @@ class EditRecipeView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         return self.request.user == self.get_object().user
 
 
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        messages.success(self.request, 'The recipe has been edited.')
+        return super(EditRecipeView, self).form_valid(form)
+
+
 class DeleteRecipeView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """Delete recipe"""
     model = RecipeModel
@@ -97,6 +105,11 @@ class DeleteRecipeView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         return self.request.user == self.get_object().user
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        messages.success(self.request, 'The recipe has been deleted from the website.')
+        return response
 
 
 class EditCommentView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):

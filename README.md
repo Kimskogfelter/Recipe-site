@@ -517,6 +517,9 @@ I also did manual testings on all website pages to ensure that everything was wo
 #### BUGS
 
 - Found that the snacks anchor tag at the home page didnt show any snack recipes. Found that I had a "s" in the anchor at the end tag for snack so the search result was wrong. By removing the extra s at the end of "snacks" the link started to work.
+- There was a bug when you tried to create a user on the register page. I found that the create_user_profile in the models.py for profiles app had Profiles
+insted of ProfileModel, which made the error with not being able to create a user. When I change from Profile to ProfileModels in the create_user_profile, you 
+was then able to create a user. 
 
 #### LIGHTHOUSE
 
@@ -699,5 +702,6 @@ to understand Django a little bit. Hopefully I have written enought own code to 
 - I useed this youtube tutorial to help me make the webpage https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1
 - I used the tutorial on this page to make the contact form work https://learndjango.com/tutorials/django-email-contact-form-tutorial
 - I used the tutorial on this page for adding comments to a blog post to help med add the comments form to the recipe detail page https://www.geeksforgeeks.org/django-project-to-create-a-comments-system/ and the old "I Think Therefore I Blog  Authorisation, Commenting and Likes  Commenting - part 2" in the LMS. 
+- I used this tutorial to make the flash messages that pops up when a recipe is added, edited or deleted from the webpage: https://www.pythontutorial.net/django-tutorial/django-flash-messages/
 
 #### All the thanks to the lovely students on slack. Specially the students in the community-sweden group for helping out when needed and my mentor Ronan for being so supportive and helpfull
