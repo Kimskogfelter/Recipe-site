@@ -29,9 +29,9 @@ if os.path.exists('env.py'):
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["8000-kimskogfelte-recipesite-kj2l9ydts1i.ws-eu110.gitpod.io",
+ALLOWED_HOSTS = ["8000-kimskogfelte-recipesite-vk87gotlnp7.ws-eu114.gitpod.io",
                  ".herokuapp.com",
                  "healthy-you-recipe-site-0b4400e888c9.herokuapp.com/"]
 
@@ -203,8 +203,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-kimskogfelte-recipesite'
-                        '-kj2l9ydts1i.ws-eu110.gitpod.io',
+CSRF_TRUSTED_ORIGINS = ['https://8000-kimskogfelte-recipesite-'
+                        'vk87gotlnp7.ws-eu114.gitpod.io',
                         'https://*.herokuapp.com',
                         'https://healthy-you-recipe-'
                         'site-0b4400e888c9.herokuapp.com/']
