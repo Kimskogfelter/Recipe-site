@@ -31,4 +31,4 @@ class ProfileModel(models.Model):
 def create_user_profile(instance, created, **kwargs):
     """Create or update the user profile"""
     if created:
-        Profile.objects.create(user=instance)
+        ProfileModel.objects.create(user=instance)
