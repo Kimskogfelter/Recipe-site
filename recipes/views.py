@@ -51,7 +51,10 @@ def RecipeDetailView(request, pk):
             comment.recipe = recipe
             comment.user = request.user
             comment.save()
-            comment_form = CommentRecipeForm()
+            messages.success(request, 'Your comment has been added to the website.')
+            comment_form = CommentRecipeForm()  # Clear the form after successful adding comment
+        else:
+            messages.error(request, 'There was an error adding your comment. Please check the form and try again.')
     else:
         # Handle invalid form submission here, if needed
         comment_form = CommentRecipeForm()
@@ -78,6 +81,10 @@ class AddRecipeView(LoginRequiredMixin, CreateView):
         form.instance.user = self.request.user
         messages.success(self.request, 'The recipe has been added to the website.')
         return super(AddRecipeView, self).form_valid(form)
+    
+    def form_invalid(self, form):
+        messages.error(self.request, 'There was an error adding your recipe. Please check the form and try again.')
+        return super(AddRecipeView, self).form_invalid(form)
 
 
 class EditRecipeView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
@@ -121,6 +128,11 @@ class EditCommentView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     def test_func(self):
         return self.request.user == self.get_object().user
+    
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        messages.success(self.request, 'The comment has been edited.')
+        return super(EditCommentView, self).form_valid(form)
 
 
 class DeleteCommentView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
@@ -131,3 +143,8 @@ class DeleteCommentView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         return self.request.user == self.get_object().user
+    
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        messages.success(self.request, 'The comment has been deleted from the website.')
+        return response
